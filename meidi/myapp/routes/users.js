@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var { db } = require('../db/db');
+const { render } = require('../app');
 
 router.all('*',function(req,res,next){
   res.header('Access-Control-Allow-Origin','*');
@@ -22,6 +23,11 @@ router.get('/', function(req, res, next) {
     }
   })
 });
+
+
+router.get('/lx',function(res,req,next){
+  render('lx',{})
+})
 
 
 
