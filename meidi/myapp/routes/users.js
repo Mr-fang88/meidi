@@ -10,7 +10,20 @@ router.all('*',function(req,res,next){
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('user ing');
+  var sql = `select * from users`
+  db.query(sql,function(err,data){
+    if(err){
+      console.log('错错错错错错错')
+      console.log(err)
+    } else {
+      console.log(data)
+      res.render('users',{data})
+      // res.send(data)
+    }
+  })
 });
+
+
+
 
 module.exports = router;

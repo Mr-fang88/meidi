@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+// var mime=require("mime");
 
 
 var ejs  = require('ejs');//```````````
@@ -18,12 +19,17 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'html');
 
 
+
 app.engine('html',ejs.__express);//```````````
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+
+// res.writeHead(200,{'Content-type':mime.getType(filePath)});
+// res.end(data);
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
