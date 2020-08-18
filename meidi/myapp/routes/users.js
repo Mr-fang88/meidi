@@ -13,4 +13,9 @@ router.get('/', function(req, res, next) {
   res.send('user ing');
 });
 
+
+router.get('/lx', function(req, res, next) {
+  res.render('lx');
+});
+
 module.exports = router;
