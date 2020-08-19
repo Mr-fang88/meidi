@@ -24,6 +24,10 @@ router.get('/', function(req, res, next) {
 });
 
 
+router.get('/ProVip',function(req,res,next){
+  res.render('ProVip',{})
+})
+
 
 
 module.exports = router;
