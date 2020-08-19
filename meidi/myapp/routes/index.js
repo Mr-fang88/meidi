@@ -18,7 +18,6 @@ router.get('/', function(req, res, next) {
       console.log('错错错错错错错')
       console.log(err)
     } else {
-      console.log(data)
       res.render('index',{data})
       // res.send(data)
     }

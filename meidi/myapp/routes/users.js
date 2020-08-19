@@ -25,10 +25,6 @@ router.get('/', function(req, res, next) {
 });
 
 
-router.get('/lx',function(res,req,next){
-  render('lx',{})
-})
-
 
 
 
