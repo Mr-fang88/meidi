@@ -11,7 +11,7 @@ router.all('*',function(req,res,next){
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  var sql = `select * from users`
+  var sql = `select * from meidi`
   db.query(sql,function(err,data){
     if(err){
       console.log('错错错错错错错')
@@ -27,8 +27,8 @@ router.get('/', function(req, res, next) {
 
 
 
-router.get('/lx',function(res,req,next){
-  render('lx',{})
+router.get('/center',function(req,res,next){
+  res.render('center',{})
 })
 
 
