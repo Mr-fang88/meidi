@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_2019043_3d18rj57kp9.css">
   <link rel="stylesheet" href="/stylesheets/reset.css">
   <link rel="stylesheet" href="/stylesheets/style.css">
   <script src="/javascripts/rem.js"></script>
 </head>
-<body>
-  <section id="box">
-    <header class="header">
 
-    </header>
-  </section>
+<body>
+  <header class="header">
+    <div class="header_box">
+      <div class="search">
+        <a href="#">
+          <i class="iconfont icon-sousuo"></i>
+          <input type="text" name="search" id="home_search" placeholder="输入你想要的商品">
+        </a>
+      </div>
+      <a href="#" id="service">
+        <i class="iconfont icon-erji01"></i>
+      </a>
+    </div>
+  </header>
 
 
 
@@ -21,20 +32,21 @@
 
   <script src="/javascripts/jQuery.js"></script>
   <script>
-    $(function(){
+    $(function () {
       $.ajax({
-        url:'http://localhost:3000/users',
-          type:'get',
-          data:{
-              // accound:$('#account').val(),
-              // psw:$('#psw').val()
-          },
-          success:function(res){
-            console.log(res)
+        url: 'http://localhost:3000/users',
+        type: 'get',
+        data: {
+          // accound:$('#account').val(),
+          // psw:$('#psw').val()
+        },
+        success: function (res) {
+          console.log(res)
 
-          }
+        }
       })
     })
   </script>
 </body>
+
 </html>
