@@ -27,36 +27,127 @@
     width: 100%;
     height: 100%;
 }
+.center1 img,
+.center2 img,
+.center3 img,
+.center4 img,
+.center5 img,
+.center6 img,
+.center7 img,
+.center8 img{
+    width: 100%;
+    height: 100%;
+}
+.center1 a,
+.center2 a,
+.center3 a,
+.center4 a,
+.center5 a,
+.center6 a,
+.center7 a,
+.center8 a{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
 .center2{
     width: 100%;
     height: 1.4rem;
 }
-.center2 img{
-    width: 100%;
-    height: 100%;
-}
+
 .center3{
     height: 4.71rem;
     width: 100%;
     position: relative;
     
 }
-.center3 img{
-    width: 100%;
-    height: 100%;
-}
-.center3 a{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
+
 .center4{
     width: 100%;
     height: 1.4rem;
 }
-.center4 img{
+
+.center5{
+    width: 100%;
+    height: 7.93rem;
+    position: relative;
+}
+
+.center6{
+    height: 2.48rem;
+    width: 100%;
+    position: relative;
+}
+
+.center7{
+    position: relative;
+    width: 100%;
+    height: 3.95rem;
+}
+.center_text{
+    background-color: #212330;
+    width: 100%;
+}
+.center_text ul{
+    overflow: hidden;
+    padding: 0.21875rem 0.23rem;
+}
+.center_text-list{
+    /* float: left; */
+    background-color: #fff;
+    position: relative;
+    width: 3.43rem;
+}
+/* .center_text-list a{
+    position:absolute;
     width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
+} */
+.center_text-list1{
+    float: left;
+}
+.center_text-list2{
+    float: right;
+}
+.center_text-list img{
+    width: 3.43rem;
+    height: 3.43rem;
+}
+.center_text-list .center_text-p1{
+    font-size: 0.24rem;
+    font-weight: 500;
+    margin: 0.15rem 0.34375rem;
+    text-align: left;
+    height: 0.52rem;
+    line-height: 1.2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.center_text-list .center_text-p1 a{
+    color: #6f6f6f;
+}
+.center_text-list .center_text-div1{
+    margin: 0.15rem 0.34375rem;
+    height: 0.5rem;
+   
+    font-weight: bold;
+}
+.center_text-list .center_text-div1 a{
+    color: #ff7920 ;
+}
+.center_text-div1-span2{
+ font-size: 0.38rem;
+}
+.center_text-div2{
+    background-color: #ff7920;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    text-align: center;
+    padding: 0 0.2rem;
+    width: 2.7rem;
+    margin: 0 auto .3rem;
 }
