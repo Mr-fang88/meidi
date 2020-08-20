@@ -26,9 +26,14 @@ router.get('/', function(req, res, next) {
 
 
 
-
+// 个人中心
 router.get('/center',function(req,res,next){
   res.render('center',{})
+})
+
+// 勋章
+router.get('/center/medal',function(req,res,next){
+  res.render('medal',{})
 })
 
 

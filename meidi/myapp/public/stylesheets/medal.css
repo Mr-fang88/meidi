@@ -1,0 +1,29 @@
+.container{
+  width: 100%;
+  height: 6.6rem;
+  background: url(https://pic.midea.cn/h5/img/2020/medal/medal_header_bg.png);
+  background-size: 100% 100%;
+}
+
+.wrap p{
+  font-size: .24rem;
+  color: #fff;
+  padding: .6rem .48rem 0;
+  text-align: end;
+}
+
+.portrait{
+  display: flex;
+  align-items: center;
+}
+
+.portrait img{
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.portrait p{
+  font-size: .36rem;
+  color: #fff;
+  padding-left: .38rem;
+}
