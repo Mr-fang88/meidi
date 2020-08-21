@@ -45,6 +45,36 @@
                 <ul class="cart_items"></ul>
             </div>
         </div>
+        <!-- 底部 -->
+        <div class="fix_bar">
+            <div class="cart_bottom_main">
+                <div class="cart_left">
+                    <!-- 复选框 -->
+                    <input type="checkbox" id="selectAll">
+                    <span class="cart_left_name"></span>
+                </div>
+                <div class="cart_right">
+                    <div class="settlement_state">
+                        <div class="price_box">
+                            <span class="price_wrap">
+                                合计:<span class="cart_product_price">
+                                    <i class="symbol">￥</i>
+                                    <!-- 总结合计 -->
+                                    <span id="totalPrice">0.00</span>
+                                </span>
+                            </span>
+                            <span class="price_tip">
+                                本单预计最高可得
+                                <span id="totalScore">0</span>
+                                积分
+                            </span>
+                        </div>
+                        <!-- 结算 -->
+                        <div class="gray_btn" id="totalCheck">结算(0)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script>
         $("area").on('click',() => {
