@@ -2,7 +2,8 @@
   width: 100%;
   height: 6.6rem;
   background: url(https://pic.midea.cn/h5/img/2020/medal/medal_header_bg.png);
-  background-size: 100% 100%;
+  background-size: 100% 6.6rem;
+  position: relative;
 }
 
 .wrap p{
@@ -15,6 +16,7 @@
 .portrait{
   display: flex;
   align-items: center;
+  padding: .8rem .6rem;
 }
 
 .portrait img{
@@ -26,4 +28,84 @@
   font-size: .36rem;
   color: #fff;
   padding-left: .38rem;
+}
+
+.privilege{
+  width: 2.24rem;
+  height: .64rem;
+  background: #4e4e4e;
+  border-radius: .36rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: .6rem;
+  top: 2.1rem;
+}
+
+.privilege img{
+  width: .24rem;
+  height: .18rem;
+}
+
+.privilege span{
+  font-size: .24rem;
+  color: #fff;
+  margin-left: .1rem;
+}
+
+.item{
+  font-size: .24rem;
+  color: #ccc;
+  padding-left: .6rem;
+}
+
+.item span{
+  font-size: .42rem;
+  color: #fff;
+  margin: 0 .15rem;
+}
+
+.medal{
+  width: 100%;
+  height: 13.8rem;
+  background: #000;
+  background-image: linear-gradient(116deg,#505051,#0d0c12);
+  border-radius: .38rem .38rem 0 0;
+  position: relative;
+  top: -1.3rem;
+}
+
+.medal-box{
+  display: flex;
+  justify-content: center;
+  padding-top: .72rem;
+  position: relative;
+}
+
+.medal-btn{
+  width: 2.2rem;
+  height: .72rem;
+  background: #4c4b4e;
+  border-radius: .36rem;
+  line-height: .72rem;
+  text-align: center;
+  font-size: .28rem;
+  color: #ccc;
+  font-weight: 700;
+  position: absolute;
+}
+
+.btn1{
+  left: 1.75rem;
+}
+
+.btn{
+  right: 1.75rem;
+}
+
+.active{
+  background: #fff;
+  color: #000;
+  z-index: 9;
 }
