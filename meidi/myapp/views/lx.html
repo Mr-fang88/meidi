@@ -1,19 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./public/lx.css">
+    <link rel="stylesheet" href="/stylesheets/lx.css">
+    <link rel="stylesheet" href="/stylesheets/reset.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_2016631_4wxrnurfwk4.css">
 </head>
-<body>
-    <header>
-        <div class="hd-col-left"></div>
-        <div class="hd-col-middle">购物车</div>
-        <div class="hd-col-right"></div>
-    </header>
-    <script src="./javascripts/jquery.js"></script>
 
-    <script src="./javascripts/rem.js"></script>
+<body>
+    <script src="/javascripts/jquery.js"></script>
+    <header>
+        <div class="hd-col">
+            <div class="hd-col-left">
+                <a href="/">
+                    <i id="backChildBtn" class="hd_back iconfont icon-left"></i>
+                </a>
+            </div>
+            <div class="hd-col-middle">
+                <h1 id="title">购物车</h1>
+            </div>
+            <div class="hd-col-right"></div>
+        </div>
+    </header>
+    <div class="cart_wrap">
+        <div class="top_box">
+            <div class="cart_left" id="area">
+                <i class="iconfont icon-ditu1"></i>
+                <span class="cart_left_name">郑州市中原区</span>
+            </div>
+            <div class="cart_right" id="editAll">管理</div>
+        </div>
+        <div class="cart_main_content">
+            <div class="cart_list_box">
+                <div class="left_right_box">
+                    <div class="cart_left">
+                        <div class="js_shop_select_box"></div>
+                        <i class="iconfont"></i>
+                    </div>
+                    <div class="cart_right"></div>
+                </div>
+                <ul class="cart_items"></ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        $("area").on('click',() => {
+
+        })
+    </script>
+    
+
+    <script src="/javascripts/rem.js"></script>
+    
 </body>
+
 </html>
