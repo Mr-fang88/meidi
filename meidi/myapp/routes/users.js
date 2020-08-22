@@ -27,15 +27,19 @@ router.get('/', function(req, res, next) {
 
 
 // 个人中心
-router.get('/center',function(req,res,next){
+router.get('/center', function(req,res,next){
   res.render('center',{})
 })
 
 // 勋章
-router.get('/center/medal',function(req,res,next){
+router.get('/center/medal', function(req,res,next){
   res.render('medal',{})
 })
 
+// 我的特权
+router.get('/center/medal/my_privilege', function(req,res,next){
+  res.render('my_privilege',{})
+})
 
 
 

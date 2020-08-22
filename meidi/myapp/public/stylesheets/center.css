@@ -100,6 +100,35 @@ header{
   margin-left: .3rem;
 }
 
+.vipBox{
+  width: 6.72rem;
+  /* height: 1.18rem; */
+  background: #fff;
+  border-radius: .2rem;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-top: -.59rem;
+  margin-left: .24rem;
+  padding: .28rem .14rem 0 .16rem;
+}
+
+.vipBox_box{
+  height: .9rem;
+}
+
+.vipBox_box p{
+  font-size: .24rem;
+  line-height: .3rem;
+  color: #333;
+}
+
+.vipBox_box_item{
+  width: 0.04rem;
+  height: .56rem;
+  background: #f4f4f4;
+}
+
 
 
 
