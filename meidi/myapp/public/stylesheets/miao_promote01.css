@@ -1,0 +1,202 @@
+.floor_moudle{
+    width: 100%;
+}
+.floor{
+    width: 100%;
+    position: relative;
+}
+.floor img{
+    width: 100%;
+    display: block;
+}
+.floor_bg0{
+    height: 2.34rem;
+}
+.floor_bg0,
+.floor_bg1,
+.floor_bg2{
+    height: 2.34rem;
+}
+.floor_bg0 img,
+.floor_bg1 img,
+.floor_bg2 img{
+    height: 2.34rem;
+}
+.floor_bg3{
+    height: 1.2rem;
+}
+.floor_bg3 img{
+    height: 1.2rem;
+}
+/*  活动券  */
+.coupons{
+    width: 7.5rem;
+    position: relative;
+}
+.coupon_bg0{
+    height: 3.44rem;
+}
+.floor_content{
+    width: 3.6rem;
+    height: 2.4rem;
+    position: absolute;
+    left: 50%;
+    top: 1.0rem;
+    transform: translateX(-50%);
+}
+/* 爆款商品 */
+.floor_hot_bg{
+    width: 100%;
+    height: 3.24rem;
+}
+.floor_hot_bg img{
+    width: 100%;
+    height: 100%;
+}
+.floor_hot_link{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+}
+.hot_link_a{
+    width: 6.64rem;
+    height: 2.58rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-3.4rem);
+    top: 0.3rem;
+}
+.cart_icon{
+    display: block;
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: red;
+    position: fixed;
+    left: 0.4rem;
+    bottom: 1rem;
+    border-radius: 50%;
+    background: url('/images/cart_icon.png') no-repeat center center;
+    background-size: 100% auto;
+    opacity: 0.88;
+}
+/* 领取优惠券手机验证 */
+.phone_cover{
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.phone_box{
+    width: 5rem;
+    height: 4.34rem;
+    background-color: #fff;
+    border-radius: 0.4rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-55%);
+    box-sizing: border-box;
+    padding: 0.58rem;
+}
+.box_close{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(1.8rem,-2rem);
+    width: 0.4rem;
+    height: 0.4rem;
+    box-sizing: border-box;
+    background: url('/images/atom_sprite.png') no-repeat -3.6rem -0.8rem;
+}
+.phoneNum{
+    width: 100%;
+    height: 0.8rem;
+    box-sizing: border-box;
+    padding: 0 0.2rem;
+    border: 1px solid #ccc;
+    border-radius: 0.1rem;
+    outline: none;
+    font-family: sans-serif;
+    font-size: 0.28rem;
+    vertical-align: baseline;
+}
+.ident_code{
+    width: 2.2rem;
+    float: left;
+}
+.getCode{
+    float: left;
+    width: 1.6rem;
+    height: 0.8rem;
+    margin-left: 0.04rem;
+    font-family: sans-serif;
+    position: relative;
+}
+.code-btn {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #56b271;
+    text-align: center;
+    line-height: 0.8rem;
+    font-size: 0.28rem;
+    color: white;
+    border-radius: 0.1rem;
+    z-index: 2;
+    overflow: hidden;
+}
+.code-btn span{
+    display:inline-block;
+    margin-left: 5px;
+    font-size: 18px;
+    font-weight:500;
+}
+.phone_box p{
+    margin-top: 0.2rem;
+}
+.massage_submit{
+    float: left;
+    width: 100%;
+    height: 1rem;
+    background-color: #e83a18;
+    font-size: 0.4rem;
+    color: white;
+    text-align: center;
+    line-height: 1rem;
+    border-radius: 0.1rem;
+    margin-top: 0.2rem;
+    outline: none;
+    border: none;
+}
+/* 手机验证成功显示提示 */
+.black_cover{
+    background: #000;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    opacity: 0.6;
+    position: fixed;
+    z-index: 998;
+}
+.success_box{
+    width: 5.5rem;
+    height: 3.62rem;
+    background-color: red;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    /* border: ; */
+}
