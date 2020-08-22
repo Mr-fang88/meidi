@@ -24,6 +24,18 @@ $(function(){
   }
   dropDown()
 
-
+  function home_banner(){
+    var swiper = new Swiper('.swiper-container', {
+      loop:'true',
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+    $('.swiper-pagination span').on('click',() => {
+      $(this).css({'borderColor':'none','outline':'none'})
+    })
+  }
+  home_banner()
 })
 
