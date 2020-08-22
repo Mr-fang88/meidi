@@ -1,0 +1,142 @@
+.main{
+    background: #f4f4f4;
+    padding-bottom: 1rem;
+}
+/* 开通会员 */
+.user_head{
+    background-image: url(https://pic.midea.cn/h5/img/pro/pro_bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 2.8rem;
+}
+.user_head-list{
+    width: 7.01rem;
+    margin: 0 auto;
+    padding-bottom: .23rem;
+    background: #fff;
+    border-radius: .26667rem;
+}
+.user_head-list ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.user_head-list-l{
+    width: 25%;
+    text-align: center;
+    padding-top: .44rem;
+    position: relative;
+}
+.user_head-list-l a{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.user_head-icon{
+    background-image: linear-gradient(156deg,#5f657d,#333747 56%,#10121c);
+    border-radius: 50%;
+    width: .68rem;
+    height: .68rem;
+    /* text-align: center; */
+    margin:  0 auto;
+}
+.user_head-icon i{
+    font-size: .48rem;
+    display: block;
+    color: #ffe7b9;
+    padding-top: 0.1rem;
+    text-align: center;
+}
+.user_head-list-l-p1{
+    font-size: .26rem;
+    color: #333;
+    margin: .03333rem 0;
+    font-weight: 700;
+}
+.user_head-list-l-p2{
+    color: #8a8a8f;
+    font-size: .24rem;
+}
+.user_head-text{
+    height:0.8rem;
+    line-height: 0.8rem;
+    margin: .58667rem .66667rem .24rem;
+    background-image: linear-gradient(130deg,#e4d0a6,#d0b37d);
+    border-radius: .69333rem;
+    text-align: center;
+    font-size: .3rem;
+    color: #604b22;
+    position: relative;
+}
+.user_head-text span{
+    font-size: .24rem;
+    text-decoration: line-through;
+}
+.user_head-txt{
+    color: #8a8a8f;
+    font-size: .24rem;
+    text-align: center;
+}
+/* 评测使用 */
+.user_trial{
+    width: 100%;
+    height: 2.58rem;
+    position: relative;
+}
+.user_trial img{
+    width: 100%;
+    height: 100%;
+}
+.user_trial a,
+.user_head-text a{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+/* 开卡礼包 */
+.user_gift{
+    padding-top: .3rem;
+    text-align: center;
+}
+.user_gift-p1{
+    font-size: .4rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: .1rem;
+}
+.user_gift-p2{
+    font-size: .24rem;
+    color: #8A8A8F;
+}
+.user_gift-list{
+    padding-top: .3rem;
+    padding-left: .24rem;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+.gift-list-1{
+    background-image: url("https://pic.mdcdn.cn/h5/pic/201904/5cc11f8ebd29a.png");
+    width: 3.08rem;
+    padding-bottom: .3rem;
+    display: inline-block;
+    margin-right: .16rem;
+}
+.gift-list-1 .gift-list-1p{
+    font-size: .72rem;
+    color: #604b22;
+    margin-bottom: .1rem;
+    padding-top: .54rem;
+}
+.gift-list-1 i{
+    font-size: .1rem;
+}
+.gift-list-pro{
+    
+}
+.gift-list-2p{
+    font-size: .24rem;
+    color: #604b22;
+}

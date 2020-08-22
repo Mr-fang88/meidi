@@ -23,10 +23,16 @@ router.get('/', function(req, res, next) {
   })
 });
 
-
+//vip页面接口
 router.get('/ProVip',function(req,res,next){
   res.render('ProVip',{})
 })
+
+//会员中心接口
+router.get('/ProVip/memberCenter',function(req,res,next){
+  res.render('memberCenter',{})
+})
+
 
 
 
