@@ -14,10 +14,9 @@ router.get('/', function(req, res, next) {
   var sql = `select * from users`
   db.query(sql,function(err,data){
     if(err){
-      console.log('错错错错错错错')
+      console.log('错')
       console.log(err)
     } else {
-      console.log(data)
       res.render('users',{data})
       // res.send(data)
     }

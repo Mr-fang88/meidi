@@ -25,28 +25,22 @@
       </a>
     </div>
   </header>
+  <section class="notice">
+    <i class="iconfont icon-laba"></i><!-- 喇叭-->
+    <i class="iconfont icon-xiala" id="dropDown"></i><!-- 下拉-->
+    <div id="notice">
+      <p>
+        【通知】受暴雨天气影响，四川省成都市、金堂县配送时效有所延迟；受疫情管控政策影响，新疆，大连长海县、瓦房店等区域发货/配送时效有所延迟，对您造成的不便，敬请谅解！
+      </p>
+    </div>
+  </section>
 
 
 
 
 
   <script src="/javascripts/jQuery.js"></script>
-  <script>
-    $(function () {
-      $.ajax({
-        url: 'http://localhost:3000/users',
-        type: 'get',
-        data: {
-          // accound:$('#account').val(),
-          // psw:$('#psw').val()
-        },
-        success: function (res) {
-          console.log(res)
-
-        }
-      })
-    })
-  </script>
+  <script src="/javascripts/homePage.js"></script>
 </body>
 
 </html>
