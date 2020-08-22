@@ -37,5 +37,14 @@ $(function(){
     })
   }
   home_banner()
+
+  let footer = () => {
+    $('.footer_a').on('click',function() {
+      console.log($(this))
+      $(this).css('color','#0092d8').siblings().css('color','#999')
+    })
+  }
+  footer()
+  
 })
 
