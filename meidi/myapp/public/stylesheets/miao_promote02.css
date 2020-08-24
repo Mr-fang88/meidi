@@ -1,0 +1,190 @@
+.floor{
+    position: relative;
+}
+.floor img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.content{
+    position:absolute;
+    left: 0;
+    top: 1.2rem;
+}
+#con_one{
+    width: 100%;
+    height: 5rem;
+}
+#link-01,#link-04{
+    width: 3.42rem;
+    position: absolute;
+    left: 0.26rem;
+    top: 0;
+    height: 2.56rem;
+}
+#link-04{
+    top: 2.75rem;
+}
+#link-02,#link-03,#link-05,#link-06{
+    width: 3.56rem;
+    height:1.24rem;
+    position: absolute;
+    right:0.2rem;
+    top: 0;
+}
+#link-03{
+    top: 1.4rem;
+}
+#link-05{
+    top:2.8rem;
+}
+#link-06{
+    top: 4.1rem;
+}
+
+/*      商品内容                       */
+
+.floor_wrap{
+    width: 100%;
+    background-color: #f16e58;
+    padding-top: 0.22rem;
+}
+.goods_list{
+    width:7.06rem;
+    margin: 0 0.22rem 0;
+    background-color: white;
+    padding: 0.24rem 0.46rem 0.7rem;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: sans-serif;
+    position: relative;
+}
+
+/* 画上三角 */
+.sale-tip{
+    position:absolute;
+    right: 0;
+    top:0;
+    width: 2.06rem;
+    height:0.6rem;
+}
+.sale-tip .arrow-out{
+    position: absolute;
+    right:0.5rem;
+    top: -0.14rem;
+    z-index: 5;
+    width: 0;
+    height: 0;
+    border-left:0.6rem solid transparent;
+    border-right:0.34rem solid transparent;
+    border-top: 0.6rem solid #f16e58;
+}
+.sale-tip .arrow-inner{
+    position: absolute;
+    right: 0;
+    top: -0.1rem;
+    z-index: 2;
+    width: 0;
+    height: 0;
+    border-left:0.7rem solid transparent;
+    border-right:0.46rem solid transparent;
+    border-top: 0.7rem solid #f16e58;
+}
+.sale-tip span{
+    position: relative;
+    left:0.36rem;
+    z-index: 88;
+    font-size: 0.24rem;
+    color: white;
+}
+
+
+.main-title{
+    font-size: 0.38rem;
+    margin-bottom: 0.24rem;
+    color: #f16e58;
+    font-weight: 700;
+}
+.sub-title{
+    font-size: 0.28rem;
+    color: #666;
+}
+.product-pic{
+    width: 5.4rem;
+    margin:0 auto;
+}
+.product-pic img{
+    display: block;
+    width: 5.4rem;
+    height: 3.5rem;
+}
+.product-col{
+    overflow: hidden;
+}
+.col-item{
+    width: 50%;
+    float: left;
+   font-family: sans-serif;
+    text-align: center;
+}
+.col-member-price{
+    width: 85%;
+    margin:  0 auto;
+    font-size: 0.24rem;
+    color: #666;
+    line-height: 1.5;
+    text-align: left;
+}
+.price_icon{
+    display: inline-block;
+    width: 0.48rem;
+    height: 0.2rem;
+    vertical-align: middle;
+    background: url('/images/member-pro.png') no-repeat;
+    background-size: 100% auto;
+}
+.col-cur-price{
+    text-align: left;
+    font-size: 0.24rem;
+    line-height: 0.36rem;
+    width: 85%;
+    margin: 0 auto;
+    color: #666;
+}
+.col-cur-price i{
+    color: #f16e58;
+    font-weight: normal;
+    margin-left:-0.1rem;
+}
+.col-cur-price em{
+    font-size:0.42rem;
+    color: #f16e58;
+    font-weight: 700;
+    margin-left:-0.1rem
+    
+}
+.buy-btn a{
+    display: block;
+    width: 85%;
+    margin:  0.1rem auto 0;
+    color: white;
+    font-size: 0.26rem;
+    font-weight: 700;
+    line-height: 0.5rem;
+    background-color: #f16e58; 
+}
+.selling-point{
+    margin:0 0.22rem;
+    padding: 0.1rem 0;  
+    text-align: center;
+    line-height:0.38rem ;  
+}
+.selling-point span{
+    color: white;
+    font-size: 0.24rem;
+    font-family: sans-serif;;
+}
+.floor_long {
+    background-color: #f16e58;
+    padding: 0.22rem 0 0;
+}

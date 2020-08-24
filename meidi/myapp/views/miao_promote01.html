@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="/stylesheets/reset.css">
     <script src="/javascripts/rem.js"></script>
     <script src="/javascripts/jquery.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/blueimp-md5/2.17.0/js/md5.js"></script>
+    
+    <!-- 自定义内公共样式 -->
+    <link rel="stylesheet" href="/stylesheets/miao_promote_public.css">
     <link rel="stylesheet" href="/stylesheets/miao_promote01.css">
 </head>
 
@@ -69,6 +73,7 @@
     <div class="floor">
         <img src="/images/miao_promote01_footer.webp" alt="">
     </div>
+
     <a class="cart_icon" href="javascript:;">
         <span id="cartNum"></span>
     </a>
@@ -76,9 +81,9 @@
     <div class="phone_cover">
         <div class="phone_box">
             <span class="box_close"></span>
-            <form action="">
+            <form action="" method="">
                 <p>
-                    <input type="text" placeholder="请输入手号" class="phoneNum">
+                    <input type="text" placeholder="请输入手号" class="phoneNum" name="phone">
                 </p>
                 <p>
                     <input type="text" placeholder="请输入验证码"class="phoneNum ident_code" >
@@ -92,13 +97,23 @@
         </div>
 
     </div>
-    <!-- 优惠券领取成功弹框 -->
-    <!-- <div class="black_cover">
-        <div class="success_box">
 
+    <!-- 优惠券领取成功弹框 -->
+    <div class="black_cover">
+        <div class="open_tip_box">
+            <div class="open_tip_icon"></div>
+            <i class="sucess"></i>
+            <h3>已领取过</h3>
+            <p>
+                您已领取过该优惠券了，领取次数已达上限
+            </p>
+            <div class="btn-box">
+                <a href="javascript:;" class="tip_btn">知道了</a>
+                <a href="javascript:;" class="tip_look">我的优惠券</a>
+            </div>
         </div>
-    </div> -->
-    <script src="/javascripts/miao_promote01.js"></script>
+    </div>
+    <script src="/javascripts/miao_promote_public.js"></script>
 </body>
 
 </html>
