@@ -19,6 +19,10 @@
   justify-content: center;
   align-items: center;
 }
+/* 白色背景 */
+.ba_co{
+  background-color: #fff;
+}
 
 /* 通知 */
 .notice{
@@ -157,7 +161,7 @@
   width: 100%;
   height: 2.66rem;
   background-color: #fff;
-  border-radius: .1rem;
+  border-radius: .1rem .1rem 0 0;
 }
 .seconds,.selling{
   width: 50%;
@@ -262,3 +266,117 @@
   transform: rotate(-90deg);
   
 }
+
+
+/* 品牌分类 */
+.goods_nav{
+  overflow: hidden;
+  border-radius: 0 0 .1rem .1rem;
+  width: 100%;
+  background-color: #fff;
+}
+.go_nav_list{
+  border-top: 1px solid #eee;
+  width: calc(25% - .2rem);
+  padding-left: .2rem;
+}
+.go_nav_list h4{
+  margin-left: .1rem;
+  margin-top: .1rem;
+  font-size: .32rem;
+  font-weight: 600;
+  color: #000;
+
+}
+.go_nav_list p{
+  margin-left: .1rem;
+  font-size: .24rem;
+  color: #ff3b30;
+}
+.go_nav_list img{
+  width: 1.28rem;
+  height: 1.28rem;
+}
+
+/* 会员专区 */
+
+.members_zone{
+  margin-top: .2rem;
+  width: 100%;
+  border-radius: .1rem;
+  padding-bottom: .2rem;
+}
+.members_zone .me_zone_title{
+  justify-content: space-between;
+}
+.me_zone_title h4{
+  font-size: .36rem;
+  color: #000;
+  line-height: .72rem;
+  margin-left: .1rem;
+}
+.me_zone_title span{
+  font-size: .24rem;
+  color: #8a8a8f;
+  line-height: .72rem;
+  margin-right: .1rem;
+}
+.me_zone_title span i{
+  transform: rotate(-90deg);
+}
+.me_zone_list img{
+  width: 0.8rem;
+  height: .8rem;
+}
+.me_zone_list span{
+  font-size: .24rem;
+  color: #000;
+}
+
+
+/* 20日会员日 每周五特惠 */
+.preferential{
+  width: 100%;
+  margin-top: .2rem;
+}
+.pref_list{
+  height: 2.56rem;
+  position: relative;
+  box-sizing: border-box;
+  padding: .2rem 0 0 .2rem;
+  width: 45%;
+  border-radius: .1rem;
+}
+.pref_list a{
+  width: 45%;
+  height: 2.56rem;
+  position: relative;
+}
+.pref_list_text h4{
+  color: #000;
+  font-size: .36rem;
+}
+.pref_list_text p{
+  color: #ff3b30;
+  font-size: .24rem;
+  line-height: 2.5;
+}
+.pref_list_text span{
+  display: block;
+  width: 1rem;
+  height: .4rem;
+  border-radius: .4rem;
+  text-align: center;
+  line-height: .41rem;
+  color: #fff;
+  background-color: #267aff;
+  font-size: .24rem;
+}
+/* .pref_list a img{
+  position: absolute;
+  bottom: .2rem;
+  right: .2rem;
+  width: 45%;
+  height: 2.56rem;
+  z-index: 10;
+} */
