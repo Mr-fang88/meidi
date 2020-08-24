@@ -1,0 +1,31 @@
+.cardHeader{
+  width: 100%;
+  background: #fff;
+  border-bottom: 0.02rem solid #d6d6d6;
+  line-height: 1.2rem;
+  display: flex;
+}
+
+.cardHeader i{
+  width: 1.2rem;
+  text-align: center;
+  font-size: .36rem;
+  color: #0093d5;
+}
+
+.cardHeader p{
+  font-size: .36rem;
+  color: #0093d5;
+  font-family: Helvetica,STHeiti STXihei, Microsoft JhengHei, Microsoft YaHei, Arial;
+  width: 5.1rem;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+

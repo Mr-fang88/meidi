@@ -41,6 +41,15 @@ router.get('/center/medal/my_privilege', function(req,res,next){
   res.render('my_privilege',{})
 })
 
+// 关注
+router.get('/center/follow', function(req,res,next){
+  res.render('follow',{})
+})
+
+// 礼品卡
+router.get('/center/card', function(req,res,next){
+  res.render('card',{})
+})
 
 
 module.exports = router;

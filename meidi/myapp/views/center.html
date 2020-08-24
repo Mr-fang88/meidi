@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="/stylesheets/reset.css">
   <link rel="stylesheet" href="/stylesheets/center.css">
-  <link rel="stylesheet" href="https://at.alicdn.com/t/font_2007327_sbu4ozjais.css">
+  <link rel="stylesheet" href="https://at.alicdn.com/t/font_2007327_9f4csgmczm7.css">
   <script src="/javascripts/rem.js"></script>
 </head>
+
 <body>
+  <!-- 个人信息 -->
   <header>
     <div class="vipac">
       <a href="http://localhost:3000/users/center/medal">
         <div class="vipac-item">
-          <img src="https://pic.midea.cn/h5/img/2019/open/medal/gold.png?x-oss-process=image/format,webp/quality,Q_90&" alt="">
+          <img src="https://pic.midea.cn/h5/img/2019/open/medal/gold.png?x-oss-process=image/format,webp/quality,Q_90&"
+            alt="">
           <span>勋章一枚</span>
         </div>
       </a>
@@ -28,7 +32,7 @@
       <img src="https://pic.mdcdn.cn/h5/pic/201903/5c9aef379e85a.png" alt="" id="pic2">
     </div>
     <div class="menu">
-      <a href="" class="menu-item">
+      <a href="http://localhost:3000/users/center/follow" class="menu-item">
         <p>0</p>
         <span>关注</span>
       </a>
@@ -40,12 +44,13 @@
         <p>0</p>
         <span>优惠券</span>
       </a>
-      <a href="" class="menu-item">
+      <a href="http://localhost:3000/users/center/card" class="menu-item">
         <p>0</p>
         <span>礼品卡</span>
       </a>
     </div>
   </header>
+  <!-- PRO会员 -->
   <div class="vipBox">
     <div class="vipBox_box">
       <img src="https://pic.mdcdn.cn/h5/pic/201904/5ca30c3bd9d5d.svg" alt="">
@@ -53,14 +58,118 @@
     </div>
     <div class="vipBox_box vipBox_box_item">
     </div>
-    <div class="vipBox_box">
+    <div class="vipBox_box vipBox_box_item1">
       <p>限时开卡送270元券</p>
       <p>购物返10倍积分</p>
     </div>
-    <div class="vipBox_box">
-      <span>立即开卡</span>
-      <i class="iconfont icon-iconfontjiantou5"></i>
-    </div>
+    <a href="">
+      <div class="vipBox_box vipBox_box_item2">
+        <span>立即开卡</span>
+        <i class="iconfont icon-iconfontjiantou5"></i>
+      </div>
+    </a>
   </div>
+  <!-- 我的订单 -->
+  <div class="order">
+    <a href="">
+      <div class="orderTitle">
+        <h3>我的订单</h3>
+        <div class="orderTitle_item">
+          <span>查看详情</span>
+          <i class="iconfont icon-iconfontjiantou5"></i>
+        </div>
+      </div>
+    </a>
+    <ul class="orderItemBox">
+      <li class="orderItem">
+        <a href="" class="orderItem1">
+          <i class="iconfont icon-icon-test"></i>
+          <p>待付款</p>
+        </a>
+      </li>
+      <li class="orderItem">
+        <a href="" class="orderItem1">
+          <i class="iconfont icon-huodongliwu"></i>
+          <p>待发货</p>
+        </a>
+      </li>
+      <li class="orderItem">
+        <a href="" class="orderItem1">
+          <i class="iconfont icon-huoche"></i>
+          <p>待收货</p>
+        </a>
+      </li>
+      <li class="orderItem">
+        <a href="" class="orderItem1">
+          <i class="iconfont icon-icon_fapinglun-xian"></i>
+          <p>评价管理</p>
+        </a>
+      </li>
+      <li class="orderItem">
+        <a href="" class="orderItem1">
+          <i class="iconfont icon-tuikuan"></i>
+          <p>退款/售后</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!-- 个人信息资料列表 -->
+  <div class="list">
+    <a href="" class="listBox">
+      <i class="iconfont icon-pintuanzhuanqu ico1"></i>
+      <div class="listBorder">
+        <p>美的拼团</p>
+        <i class="iconfont icon-iconfontjiantou5 font"></i>
+      </div>
+    </a>
+    <a href="" class="listBox">
+      <i class="iconfont icon-huiyuan ico2"></i>
+      <div class="listBorder">
+        <p>会员福利社</p>
+        <p>签到送积分</p>
+        <i class="iconfont icon-iconfontjiantou5 font"></i>
+      </div>
+    </a>
+    <a href="" class="listBox">
+      <i class="iconfont icon-baojiafuwu ico3"></i>
+      <div class="listBorder">
+        <p>极速保价</p>
+        <i class="iconfont icon-iconfontjiantou5 font"></i>
+      </div>
+    </a>
+    <a href="" class="listBox">
+      <i class="iconfont icon-fangyuan ico4"></i>
+      <div class="listBorder">
+        <p>我的产品库</p>
+        <i class="iconfont icon-iconfontjiantou5 font"></i>
+      </div>
+    </a>
+    <a href="" class="listBox">
+      <i class="iconfont icon-jiantou_zuoyouqiehuan ico5"></i>
+      <div class="listBorder">
+        <p>我的兑换</p>
+        <i class="iconfont icon-iconfontjiantou5 font"></i>
+      </div>
+    </a>
+  </div>
+  <div class="list2">
+    <a href="" class="listBox">
+      <i class="iconfont icon-bangzhu ico6"></i>
+      <div class="listBorder">
+        <p>帮助中心</p>
+        <i class="iconfont icon-iconfontjiantou5 font"></i>
+      </div>
+    </a>
+    <a href="" class="listBox">
+      <i class="iconfont icon-shezhi ico7"></i>
+      <div class="listBorder">
+        <p>设置</p>
+        <p>账户设置、地址</p>
+        <i class="iconfont icon-iconfontjiantou5 font"></i>
+      </div>
+    </a>
+  </div>
+
 </body>
+
 </html>

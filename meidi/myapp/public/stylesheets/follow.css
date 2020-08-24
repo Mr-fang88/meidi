@@ -1,0 +1,156 @@
+body{
+  background: #f5f0ec;
+}
+
+.followHeader{
+  width: 100%;
+  background: #fff;
+  border-bottom: 0.02rem solid #d6d6d6;
+  line-height: 1.2rem;
+  display: flex;
+}
+
+.followHeader i{
+  width: 1.2rem;
+  text-align: center;
+  font-size: .36rem;
+  color: #0093d5;
+}
+
+.followHeader p{
+  font-size: .36rem;
+  color: #0093d5;
+  font-family: Helvetica,STHeiti STXihei, Microsoft JhengHei, Microsoft YaHei, Arial;
+  width: 5.1rem;
+  text-align: center;
+}
+
+.followBox{
+  width: 7.1rem;
+  padding: 0 .2rem;
+}
+
+.followBoxItem{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.followItem{
+  width: 2.84rem;
+  padding: .3rem;
+  background: #fff;
+  margin-top: .2rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.followItem img{
+  width: 2.84rem;
+  height: 2.84rem;
+}
+
+.followItem .followItem_font{
+  font-size: .28rem;
+  height: .7rem;
+  color: #333;
+  line-height: .36rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+
+}
+
+.followPrice{
+  display: flex;
+  line-height: .6rem;
+}
+
+.followPrice p{
+  font-size: .24rem;
+  font-weight: bold;
+}
+
+.followPrice .mod_price{
+  color: #ff6600;
+}
+
+.followPrice .mod_price1{
+  color: #333;
+  margin-left: .08rem;
+}
+
+.followPrice .followFont{
+  width: .4rem;
+  height: .26rem;
+  color: #ffe7b9;
+  font-size: .22rem;
+  line-height: .26rem;
+  font-style: oblique;
+  border-radius: .04rem;
+  padding: 0 .08rem;
+  background: #242733;
+  margin: .15rem 0 0 .08rem;
+}
+
+.followFooter{
+  width: 100%;
+  margin: .2rem 0;
+  line-height: .8rem;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.followFooter .followFooterItem{
+  width: 50%;
+  text-align: center;
+  font-size: .28rem;
+  color: #0093d5;
+}
+
+.postBox{
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.postBox .postBox_item{
+  width: 1.2rem;
+  line-height: .5rem;
+  background: linear-gradient(156deg, #484D5E 0%, #10121C 100%);
+  color: #ffe7b9;
+  font-size: .22rem;
+  text-align: center;
+}
+
+.postBox .postBox_item span{
+  font-style: oblique;
+  margin-right: .08rem;
+  font-size: .2rem;
+}
+
+.postBox .postBox_item1{
+  width: 1.36rem;
+  line-height: .5rem;
+  background: #ff6600;
+  color: #fff;
+  font-size: .24rem;
+  text-align: center;
+}
+
+.empty{
+  width: 100%;
+  line-height: .8rem;
+  text-align: center;
+  background: #fff;
+  margin-top: .4rem;
+  font-size: .28rem;
+  font-family: Helvetica,STHeiti STXihei, Microsoft JhengHei, Microsoft YaHei, Arial;
+}
+
+
+
