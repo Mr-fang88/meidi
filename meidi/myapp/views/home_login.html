@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_2019043_3d18rj57kp9.css">
+  <link rel="stylesheet" href="/stylesheets/reset.css">
+  <link rel="stylesheet" href="/stylesheets/home_login.css">
+  <script src="/javascripts/rem.js"></script>
+
+</head>
+<body>
+  <div class="login">
+    <div class="box">
+      <div class="header">
+        <a href="http://localhost:3000" class="return">
+          <i class="iconfont icon-xiala return_i"></i>
+        </a>
+        <div class="title">
+          <a>账号密码登录</a>
+          <a>短信验证码登录</a>
+        </div>
+      </div>
+
+      <form id="form" >
+        <!-- 账号 -->
+        <div class="account">
+          <input type="text" id="account" placeholder="请输入手机号">
+        </div>
+        <!-- 密码 -->
+        <div class="psw">
+          <input type="password" id="psw" placeholder="请输入密码">
+        </div>
+        <p class="forget">找回密码</p>
+        <!-- 登录 -->
+        <div class="submit">
+          <input type="submit" id="submit" value="登录">
+        </div>
+      </form>
+      <div class="DoRegistered">
+        <a href="http://localhost:3000/DoRegistered">注册</a>
+      </div>
+    </div>
+  </div>
+  <script src="/javascripts/jQuery.js"></script>
+  <script>
+    $(function(){
+      $('#form').submit(function(e){
+        e.preventDefault()
+        $.ajax({
+          url:'http://localhost:3000/login',
+          type:'post',
+          data:{
+            account:$('#account').val(),
+            psw:$('#psw').val()
+          },
+          success:function(res){
+            console.log($('#account').val())
+
+            if(res.code === 1){
+              if(res.data.account === $('#account').val() && res.data.password === $('#psw').val()){
+                console.log(res.data)
+                location.href = 'http://localhost:3000'
+              }
+            }
+          }
+        })
+      })
+    })
+
+  </script>
+</body>
+</html>

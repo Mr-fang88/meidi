@@ -12,18 +12,52 @@ router.all('*',function(req,res,next){
 
 // 主页
 // localhost:3000
-router.get('/', function(req, res, next) {
-  var sql = `select * from users`
+router.get('/', function(req, res) {
+  res.render('index',{})
+});
+
+router.get('/login',function(req,res){
+  res.render('home_login',{})
+})
+
+router.post('/login', function(req, res) {
+  let sql = `select * from users where account='${req.body.account}' && password='${req.body.psw}'`
   db.query(sql,function(err,data){
     if(err){
-      console.log('错')
-      console.log(err)
+      console.error(err)
     } else {
-      res.render('index',{data})
-      // res.send(data)
+      res.send({
+        code:1,
+        data:data[0],
+        msg:'success'
+      })
     }
   })
 });
+
+router.get('/DoRegistered',function(req,res){
+  res.render('DoRegistered',{})
+})
+
+router.post('/DoRegistered', function(req, res) {
+  if(req.body.psw === req.body.to_psw){
+    let sql = `insert into users (account,password) values ('${req.body.account}','${req.body.psw}')`
+    db.query(sql,function(err,data){
+      if(err){
+        console.error(err)
+      } else {
+        res.send({
+          code:1,
+          data:data[0],
+          msg:'success'
+        })
+      }
+    })
+  }
+});
+
+
+
 
 
 

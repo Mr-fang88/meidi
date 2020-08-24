@@ -41,10 +41,34 @@ $(function(){
   let footer = () => {
     $('.footer_a').on('click',function() {
       console.log($(this))
-      $(this).css('color','#0092d8').siblings().css('color','#999')
+      $(this).addClass("active")
+      $('.footer_a').removeClass("active");
     })
   }
   footer()
-  
+
+
+  let Seconds = () => {
+    let future = new Date('2020-8-25 12:00:00')
+    let dm = future.getTime()
+    let m_s = setInterval(function(){
+      let dq_time = new Date()
+      let wl_time = dq_time.getTime()
+      let sjc_time = dm - wl_time
+
+      let shi = parseInt(sjc_time / (3600 * 1000) % 24)
+      let fen = parseInt(sjc_time / 1000 / 60 % 60)
+      let miao = parseInt(sjc_time / 1000 % 60)
+
+      $('#shi').text(shi)
+      $('#fen').text(fen)
+      $('#miao').text(miao)
+
+      if(sjc_time <= 0){
+        clearInterval(m_s)
+      }
+    },1000)
+  }
+  Seconds()
 })
 

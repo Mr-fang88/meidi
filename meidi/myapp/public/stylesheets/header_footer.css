@@ -85,6 +85,9 @@ i{
 .footer_a{
   color: #999;
 }
+.footer_list .active {
+  color: #0092d8;
+}
 .footer_a span{
   font-size: .20rem;
   line-height: 1.7;
