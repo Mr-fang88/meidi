@@ -1,0 +1,297 @@
+
+.main {
+    width: 100%;
+    
+}
+
+.main img {
+    display: block;
+    width: 100%;
+}
+
+.conpous {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.conpousClick {
+    /* display: block; */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+}
+
+.conpousClick .conpous-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.prize-list {
+    width: 100%;
+    position: relative;
+}
+
+.prize-list .prize {
+    width: 100%;
+    height: 100%;
+    /* height: 12rem; */
+    position: absolute;
+    top: 0rem;
+}
+
+.prize-content {
+    width: 100%;
+    height: 100%;
+    /* height: 6rem; */
+    position: absolute;
+    top: 0rem;
+}
+
+.prize-content:nth-of-type(1) a {
+    display: block;
+    width: 50%;
+    height: 30%;
+    position: absolute;
+    top: 1.3rem;
+    z-index: 1;
+}
+
+.prize-content:nth-of-type(2) a {
+    display: block;
+    width: 50%;
+    height: 30%;
+    position: absolute;
+    right: 0rem;
+    top: 1.3rem;
+    z-index: 1;
+}
+
+.prize-content:nth-of-type(3) a {
+    display: block;
+    width: 50%;
+    height: 30%;
+    position: absolute;
+    /* top: 1.3rem; */
+    bottom: 0.2rem;
+    z-index: 1;
+}
+
+.prize-content:nth-of-type(4) a {
+    display: block;
+    width: 50%;
+    height: 30%;
+    position: absolute;
+    /* top: 1.3rem; */
+    right: 0px;
+    bottom: 0.2rem;
+    z-index: 1;
+}
+
+.background-click {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.middle-link {
+    width: 50%;
+    height: 1.25rem;
+    position: absolute;
+    bottom: 0rem;
+    left: 0rem;
+}
+
+.shopPageLink {
+    /* position: absolute; */
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.middle-link2 {
+    width: 50%;
+    height: 1.25rem;
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
+}
+
+.shopPageLink2 {
+    /* position: absolute; */
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.middle-link3 {
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    top: 0px;
+}
+
+.airconditionLink {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.priceFont {
+    font-size: 0.4rem;
+    color: red;
+    font-weight: 600px;
+    position: absolute;
+    bottom: 0.9rem;
+    left: 1.4rem;
+}
+
+.priceFont2 {
+    font-size: 0.4rem;
+    color: red;
+    font-weight: 600px;
+    position: absolute;
+    bottom: 0.9rem;
+    right: 1.8rem;
+}
+
+.shopping {
+    width: 100%;
+}
+
+.shop-list {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.first-list {
+    display: block;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+}
+
+.second-list {
+    display: block;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+}
+
+.price-list {
+    font-size: 0.4rem;
+    color: red;
+    font-weight: 600px;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 1rem;
+}
+
+.price-list2 {
+    font-size: 0.4rem;
+    color: red;
+    font-weight: 600px;
+    position: absolute;
+    bottom: 0.5rem;
+    right: 2rem;
+}
+
+.service {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.service-list {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.service-list2 {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.service-list3 {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.service-list4 {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.foot {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.foot-back {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.foot-backHead {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.shopWindow {
+    width: 1rem;
+    height: 1rem;
+    background-color: blue;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 0.7rem;
+    left: 0.3rem;
+}
+
+.text {
+/* display: block; */
+font-size: 25px;
+    position: absolute;
+    top: 0.2rem;
+    left: 0.2rem;
+    color: white;
+}
+.number{
+    display: block;
+    width: 0.3rem;
+    height: 0.3rem;
+    border-radius: 50%;
+    background-color: red;
+    text-align: center;
+    padding: 0.08rem ;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0rem;
+}

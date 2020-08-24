@@ -9,24 +9,23 @@ router.all('*',function(req,res,next){
   next();
 })
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  var sql = `select * from users`
-  db.query(sql,function(err,data){
-    if(err){
-      console.log('错错错错错错错')
-      console.log(err)
-    } else {
-      console.log(data)
-      res.render('users',{data})
-      // res.send(data)
-    }
-  })
-});
 
 
-router.get('/lx',function(res,req,next){
-  render('lx',{})
+
+router.get('/shopping',function(req,res){
+  res.render('shopping',{})
+})
+router.get("/conpons",function(req,res){
+    res.render('conpons',{})
+})
+router.get("/conpons_two",function(req,res){
+  res.render('conpons_two',{})
+})
+router.get("/conpons_third",function(req,res){
+  res.render("conpons_third",{})
+})
+router.get("/conpons_fourth",function(req,res){
+  res.render("conpons_fourth",{})
 })
 
 

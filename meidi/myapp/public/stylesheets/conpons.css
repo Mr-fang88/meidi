@@ -1,0 +1,181 @@
+.header{
+    width: 100%;
+    height: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #0093D5;
+    border-bottom:0.001rem solid grey;
+    /* opacity: 0.8; */
+         
+    box-sizing: border-box;
+}
+.backPage{
+    margin-left:0.2rem;
+}
+.title h1{
+    font-weight: normal;
+}
+.backPage .text{
+    display: block;
+}
+.useExplain{
+    margin-right: 0.2rem;
+    font-size:0.24rem;
+    color: #0093D5;
+
+}
+.used{
+    width: 100%;
+    height: 1rem;
+    font-size: .32rem;
+    /* color: #333333;  */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    box-sizing: border-box;
+    border-bottom:0.01rem solid #e5e5e5;
+}
+
+.ing{
+    /* font-size: 16px; */
+ color: #333333;
+}
+.used .conpon-use{
+    width: 1.3rem;
+    height: 0.7rem;
+    text-align: center;
+    box-sizing: border-box;
+    
+}
+.used .active{
+    border-bottom:0.05rem solid #0093D5;
+}
+.number{
+    width: 100%; 
+    height: 1.24rem;
+    border-bottom:0.01rem solid #e5e5e5;
+    box-sizing: border-box;
+
+}
+.PRO{
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    bottom: 3rem;
+    right: 0rem;
+}
+.PRO_img{
+    display: block;
+    width: 100%;
+}
+.WillExpire_conpons{
+    font-size: 0.28rem;
+    color: #666666;
+    text-align: center;
+    padding: 1rem 0rem;
+}
+.expire_conpons{
+    font-size: 0.28rem;
+    color: #666666;
+    text-align: center;
+    padding: 1rem 0rem;
+}
+.expire_text{
+    font-size: 0.28rem;
+    
+}
+.used_conpons{
+    font-size: 0.28rem;
+    color: #666666;
+    text-align: center;
+    padding: 1rem 0rem;
+}
+.content{
+    width: 100%;
+    text-align: center;
+    color: #0093D5;
+    line-height:1.24rem;
+    font-size: 0.32rem;
+
+}
+.addColor{
+    color: #0093D5;
+}
+.conpon_list{
+    width: 100%;
+}
+.conpons_first{
+    width: 100%;
+    display: flex;
+    justify-content: first baseline;
+    padding:0.3rem 0.2rem;
+    /* margin:0rem 0.2rem; */
+  box-sizing: border-box;
+
+}
+.conpons_img{
+    width: 33%;
+    position: relative;
+}
+.imgs{
+    display: block;
+    width: 100%;
+
+}
+.price{
+   width: 100%;
+    font-size:0.24rem ;
+    text-align: center;
+    color: white;
+    font-style: italic;
+    position: absolute;
+    top: 0.2rem;
+    /* left: 1.4rem; */
+}
+.num{
+    font-size: 0.52rem;
+    color: white;
+    font-style: italic;
+}
+.priceContent{
+    width: 100%;
+    font-size: 0.24rem;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top:1rem;
+    /* left: 1rem; */
+}
+.substance{
+    /* width: 66%; */
+    width: 67%;
+    padding-left: 0.1rem;
+
+} 
+.title_list{
+    /* width: 100%; */
+    font-size: 0.32rem;
+}
+.introduct{
+    /* width: 100%; */
+    font-size: 0.28rem;
+    color: #999999;
+}
+.date{
+    /* width: 100%; */
+    font-size: 0.28rem;
+    color: #FF3300;
+}
+.click-content{
+    width: 2rem;
+    height: 0.6rem;
+    border:0.01rem solid #666666;
+    font-size: 0.28rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
