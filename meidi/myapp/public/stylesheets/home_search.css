@@ -1,0 +1,13 @@
+body{
+  background-color: #fff;
+}
+.header{
+  width: 100%;
+  font-size: .24rem;
+}
+#form{
+  display: flex;
+  border-bottom: 1px solid #eee;
+  height: .88rem;
+  background-color: #fff;
+}

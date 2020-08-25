@@ -14,13 +14,74 @@ router.all('*',function(req,res,next){
 router.get('/goods',function(req,res){
   let sql = `select * from goods`
   db.query(sql,function(err,data){
-    res.send({
-      code:1,
-      data:data,
-      msg:'success'
-    })
+    if(err){
+      console.log(err)
+    } else {
+      res.send({
+        code:1,
+        data:data,
+        msg:'success'
+      })
+    }
   })
 })
+router.get('/goods_2',function(req,res){
+  let sql = `select * from goods_2`
+  db.query(sql,function(err,data){
+    if(err){
+      console.log(err)
+    } else {
+      res.send({
+        code:1,
+        data:data,
+        msg:'success'
+      })
+    }
+  })
+})
+router.get('/goods_3',function(req,res){
+  let sql = `select * from goods_3`
+  db.query(sql,function(err,data){
+    if(err){
+      console.log(err)
+    } else {
+      res.send({
+        code:1,
+        data:data,
+        msg:'success'
+      })
+    }
+  })
+})
+router.get('/goods_4',function(req,res){
+  let sql = `select * from goods_4`
+  db.query(sql,function(err,data){
+    if(err){
+      console.log(err)
+    } else {
+      res.send({
+        code:1,
+        data:data,
+        msg:'success'
+      })
+    }
+  })
+})
+router.get('/goods_5',function(req,res){
+  let sql = `select * from goods_5`
+  db.query(sql,function(err,data){
+    if(err){
+      console.log(err)
+    } else {
+      res.send({
+        code:1,
+        data:data,
+        msg:'success'
+      })
+    }
+  })
+})
+
 
 // 主页
 // localhost:3000
