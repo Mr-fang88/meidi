@@ -12,13 +12,13 @@ router.all('*',function(req,res,next){
 router.get('/', function(req, res, next) {
   res.send('user ing');
 });
-router.get('/lx', function(req, res, next) {
-  res.render('lx',{});
+router.get('/cuckoo', function(req, res, next) {
+  res.render('cuckoo',{});
 });
 
 
 router.get('/lx', function(req, res, next) {
-  res.render('lx');
+  res.render('lx',{});
 });
 
 module.exports = router;
