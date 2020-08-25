@@ -97,7 +97,7 @@ header{
     padding-left: 11px;
 }
 .cart_left_name{
-    margin-left: 26px;
+    /* margin-left: 26px; */
     padding: 17.5px 0;
     line-height: 23px;
     font-size: 15px;
