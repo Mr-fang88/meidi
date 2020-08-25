@@ -9,7 +9,6 @@
 .content{
     position:absolute;
     left: 0;
-    top: 1.2rem;
 }
 #con_one{
     width: 100%;
@@ -187,4 +186,92 @@
 .floor_long {
     background-color: #f16e58;
     padding: 0.22rem 0 0;
+}
+
+
+
+
+/* 商品列表项 */
+.floor_long .content{
+    position: relative;
+}
+.content ul{
+    overflow: hidden;
+    width:7.06rem ;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.mc_product_list{
+    float: left;
+    width: 3.42rem;
+    background: #fff;
+    margin-bottom: 0.16rem;
+    padding-bottom: 0.24rem;
+    position: relative;
+}
+.mc_icon_tag{
+    position: absolute;
+    left: 0.1rem;
+    top: 0.1rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    background:url('/images/common_sp.png') no-repeat 0 0;
+    background-size: 3.16rem 2.92rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size:0.24rem;
+    color: white;
+}
+
+.mc_product img{
+    display: block;
+    width: 3.42rem;
+    height: 3.42rem;
+}
+.mc_product_detail{
+    text-align: left;
+    font-family: sans-serif;
+    margin: 0.18rem 0.24rem 0;
+}
+.mc_pro_describe{
+    margin-bottom: 0.18rem;
+    font-size: 0.24rem;
+    font-weight: 500;
+    color: #333;
+    height: 0.6rem;
+    line-height: 0.28rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.mc_pro_price{
+    color: #f5216d;
+    font-size:0.24rem;
+    font-weight: bold;
+}
+.mc_pro_price em{
+    font-size: 0.4rem;
+}
+.mc_pro_buy{
+    width: 2.9rem;
+    height: 0.5rem;
+    margin: 0.05rem auto;
+    text-align: center;
+    line-height: 0.5rem;
+    color: white;
+    font-size:0.24rem;
+    font-weight: 700;
+    background-color: #f5216d;
+}
+
+.mc_icon_arrow{
+    display: inline-block;
+    vertical-align: middle;
+    width: 0.2rem;
+    height: 0.2rem;
+    background: url("/images/common_sp.png") no-repeat 0.02rem -1.36rem;
+    margin-left: 0.1rem;
 }

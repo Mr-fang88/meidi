@@ -4,7 +4,8 @@ var { db } = require('../db/db');
 const { render } = require('pug');
 var bodyparser = require('body-parser');
 
-var encodepaser = bodyparser.urlencoded({ extended: false })
+db.connect();
+
 router.all('*', function (req, res, next) {
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Methos', '*');
@@ -24,12 +25,44 @@ router.get("/miao_promote01", function (request, response) {
   response.render("miao_promote01");
 })
 
-
+// 渲染promote02文件中的内容
 router.get("/miao_promote02", function (resquest, response) {
+
   response.render("miao_promote02");
 })
+router.post("/requestData",function(request,response){
+  console.log("8888");
+  var sql = 'select * from miao_goods'
+  db.query(sql,function(err,data){
+    if(err){
+      console.log("请求出错")
+    }else{
+      console.log(data)
+      response.send(data)
+    }
+  })
+})
+
 router.get("/miao_promote03", function (resquest, response) {
   response.render("miao_promote03");
 })
+
+
+
+module.exports = router;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 module.exports = router;
