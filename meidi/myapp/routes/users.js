@@ -15,6 +15,12 @@ router.get('/', function(req, res, next) {
 router.get('/cuckoo', function(req, res, next) {
   res.render('cuckoo',{});
 });
+router.get('/Hualing', function(req, res, next) {
+  res.render('Hualing',{});
+});
+router.get('/Swan', function(req, res, next) {
+  res.render('Swan',{});
+});
 
 
 router.get('/lx', function(req, res, next) {

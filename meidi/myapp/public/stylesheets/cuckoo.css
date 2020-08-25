@@ -141,20 +141,10 @@ img {
 
 /* 内容 */
 .goods-wrapper{
-    /* padding-top: 10rem; */
     overflow: hidden;
     position: absolute;
-    /* opacity: 0; */
     display: none;
-    /* visibility: hidden; */
-    /* z-index: 20; */
 }
-/* html body .ach{ */
-    /* opacity: 1; */
-    /* visibility: visible; */
-    /* overflow: hidden; */
-    /* display: block ; */
-/* } */
 .goods-wrapper {
     padding: 0 .3rem .2rem;
     display: flex;
@@ -166,7 +156,6 @@ img {
     position: relative;
     margin-bottom: .4367rem;
     padding: .22667rem .16667rem;
-    /* height: 7.04rem; */
     width: 3.36rem;
     box-sizing: border-box;
     border-radius: .21333rem;
@@ -313,8 +302,6 @@ img {
     background: #fff;
     border-radius: 5px;
     z-index: 10000;
-    /* opacity: 0;
-    transition: opacity linear .2s; */
     box-shadow: (0 0.05333rem 0.26667rem 0 rgba(0,0,0,.1))
 }
 .popup{
