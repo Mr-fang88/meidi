@@ -23,11 +23,15 @@ img {
 }
 
 .cover-wrapper {
+    width: 100%;
+    height: 5rem;
     padding: 0 .3rem;
+    background: transparent 0 -1.54667rem/100% no-repeat;
 }
 .cover-wrapper {
+    height: 5.7rem;
     width: 100%;
-    background-image: url(https://pic.midea.cn/h5/pic/202007/5f24052bbfce4.png?x-oss-process=image/format,webp/quality,Q_90&) !important;
+    background-image: url(https://pic.midea.cn/h5/pic/202007/960c9e4ccf71.png?x-oss-process=image/format,webp/quality,Q_90&@100Q.png) !important;
     background-size: cover;
 }
 
