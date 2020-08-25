@@ -1,9 +1,38 @@
 $(function(){
   $.ajax({
-    url: 'http://localhost:3000/users',
+    url: 'http://172.16.5.114:3000/goods',
     type: 'get',
     success: function (res) {
-      // console.log(res)
+      console.log(res.data)
+      for(i = 0; i < res.data.length; i++){
+        var html = ''
+        html = `
+        <li class="of_list ba_co">
+        <a href="">
+          <div class="title_l main_scattered">
+            <p>${res.data[i].title_l}</p>
+            <span>${res.data[i].title_r}</span>
+          </div>
+          <img src="${res.data[i].img}" alt="" class="of_img">
+          <div class="goods_name">
+            <p>${res.data[i].goods_name}</p>
+            <font class="main_scattered font_of_1">
+              <i>￥</i>
+              <span class="price">${res.data[i].price}</span>
+            </font>
+            <div class="hy_price">
+              <font class="main_scattered">
+                <i>￥</i>
+                <span class="price">${res.data[i].mem_price}</span>
+              </font>
+              <span class="of_pro">PRO</span>
+            </div>
+            <i class="shopping_cart iconfont icon-gouwuche"></i>
+          </div>
+        </a>
+      </li>`
+      $('#goods_ul').append(html)
+    }
     }
   })
   
@@ -26,6 +55,7 @@ $(function(){
 
   function home_banner(){
     var swiper = new Swiper('.swiper-container', {
+      autoplay:true,
       loop:'true',
       pagination: {
         el: '.swiper-pagination',
@@ -38,18 +68,9 @@ $(function(){
   }
   home_banner()
 
-  let footer = () => {
-    $('.footer_a').on('click',function() {
-      console.log($(this))
-      $(this).addClass("active")
-      $('.footer_a').removeClass("active");
-    })
-  }
-  footer()
-
-
+  
   let Seconds = () => {
-    let future = new Date('2020-8-25 12:00:00')
+    let future = new Date('2020-8-26 10:00:00')
     let dm = future.getTime()
     let m_s = setInterval(function(){
       let dq_time = new Date()
@@ -70,5 +91,44 @@ $(function(){
     },1000)
   }
   Seconds()
+
+
+  $('#home_search').focus(() => {
+    location.href = 'http://localhost:3000/search'
+  })
 })
 
+
+let goods_class = () => {
+  let go_cl_h4 = document.querySelectorAll('.go_cl_list h4')
+  let go_cl_span = document.querySelectorAll('.go_cl_list span')
+  let go_cl = document.querySelectorAll('.go_cl_list')
+  let list_of_goods_l = document.querySelectorAll('.list_of_goods_l')
+  go_cl.forEach(function(item,index){
+    item.addEventListener('click',function(){
+      for(var i = 0; i < go_cl_h4.length; i++){
+          go_cl_h4[i].style.color = "#000"
+          go_cl_span[i].classList.remove('active_t')
+          list_of_goods_l[i].classList.remove('active_go')
+      }
+        go_cl_h4[index].style.color = "#ff6600"
+        go_cl_span[index].classList.add('active_t')
+        list_of_goods_l[index].classList.add('active_go')
+    })
+  })
+  
+}
+goods_class()
+
+
+
+
+var footer_a = document.querySelectorAll('.footer_a')
+footer_a.forEach(function(item,index){
+  item.addEventListener('click',function(){
+    for(var i = 0; i < footer_a.length; i++){
+      footer_a[i].style.color = '#999'
+    }
+    footer_a[index].style.color = '#0092d8'
+  })
+})

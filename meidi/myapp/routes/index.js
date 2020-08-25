@@ -10,6 +10,18 @@ router.all('*',function(req,res,next){
   next();
 })
 
+
+router.get('/goods',function(req,res){
+  let sql = `select * from goods`
+  db.query(sql,function(err,data){
+    res.send({
+      code:1,
+      data:data,
+      msg:'success'
+    })
+  })
+})
+
 // 主页
 // localhost:3000
 router.get('/', function(req, res) {
@@ -55,6 +67,11 @@ router.post('/DoRegistered', function(req, res) {
     })
   }
 });
+
+
+router.get('/search',function(req,res){
+  res.render('home_search',{})
+})
 
 
 
