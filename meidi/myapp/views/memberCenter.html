@@ -712,7 +712,6 @@
             // $(document).bind('mousewheel', function (event, delta) {
             //     return false;
             // });
-            // console.log('1')
         })
 
         $('.cha').on('click', () => {
@@ -723,10 +722,9 @@
         })
         //点击弹窗外任意地方弹窗消失
         $('.calculator_pop').on('click', function (e) {
-            // console.log(e)
             var e = e || window.event;
             var target = e.target;
-            // console.log(target.className)
+            // console.log($('target').prop('className'))
             if (target.className === 'calculator_pop') {
                 $(this).hide()
             }

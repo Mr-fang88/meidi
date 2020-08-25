@@ -33,7 +33,19 @@ router.get('/ProVip/memberCenter',function(req,res,next){
   res.render('memberCenter',{})
 })
 
+// 评测试用接口
+router.get('/ProVip/evaluating',function(req,res,next){
+  res.render('evaluating',{
 
+  })
+})
+
+//更多权益接口
+router.get('/ProVip/MoreInterests',function(req,res,next){
+  res.render('MoreInterests',{
+    
+  })
+})
 
 
 module.exports = router;
