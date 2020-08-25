@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/stylesheets/reset.css">
+  <link rel="stylesheet" href="/stylesheets/insured.css">
+  <link rel="stylesheet" href="https://at.alicdn.com/t/font_2007327_8nqpqrk4is.css">
+  <script src="/javascripts/rem.js"></script>
+</head>
+<body>
+  <div class="insuredHeader">
+    <a href="http://localhost:3000/users/center">
+      <i class="iconfont icon-right"></i>
+    </a>
+    <p>我的团</p>
+  </div>
+  <div class="insuredContent">
+    <p>购买后商品发生降价，美的会员可享发货后三天内补差价，PRO会员可延长至30天</p>
+  </div>
+  <div class="insuredWrap">
+    <div class="insuredWrapItem list">
+      <p class="active">保价申请</p>
+    </div>
+    <div class="insuredWrapItem list1">
+      <p>申请记录</p>
+    </div>
+    <a href="">
+      <i class="iconfont icon-wenhao"></i>
+    </a>
+  </div>
+  <div class="insuredMsg">
+    <p>暂无可申请极速保价的订单，<a href="">去商城逛逛</a></p>
+  </div>
+  <div class="insuredInput">
+    <input type="text" placeholder="请输入订单号">
+    <i class="iconfont icon-sousuo"></i>
+  </div>
+  <div class="insuredFooter">
+    暂无极速保价记录
+  </div>
+  <script src="/javascripts/jquery.js"></script>
+  <script>
+    $('.insuredWrapItem').on('click', function() {
+      $(this).children('p').addClass('active').parent().siblings().children('p').removeClass('active')
+    })
+
+    $('.list1').on('click',function() {
+      $('.insuredInput').show()
+      $('.insuredFooter').show()
+      $('.insuredMsg').hide()
+    })
+    $('.list').on('click',function() {
+      $('.insuredInput').hide()
+      $('.insuredFooter').hide()
+      $('.insuredMsg').show()
+
+    })
+
+  </script>
+</body>
+</html>

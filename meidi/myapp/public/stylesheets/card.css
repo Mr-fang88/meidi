@@ -1,28 +1,118 @@
+body{
+  background: #efeff4;
+}
+
 .cardHeader{
   width: 100%;
   background: #fff;
-  border-bottom: 0.02rem solid #d6d6d6;
-  line-height: 1.2rem;
+  line-height: .88rem;
   display: flex;
+  justify-content: space-between;
 }
 
-.cardHeader i{
-  width: 1.2rem;
-  text-align: center;
+.cardHeader .cardJt i{
   font-size: .36rem;
+  color: #0093d5;
+  margin: auto .3rem;
+}
+
+.cardItem p{
+  width: 1.52rem;
+  font-size: .24rem;
   color: #0093d5;
 }
 
-.cardHeader p{
+.cardItem1{
+  margin-left: .6rem;
   font-size: .36rem;
   color: #0093d5;
   font-family: Helvetica,STHeiti STXihei, Microsoft JhengHei, Microsoft YaHei, Arial;
-  width: 5.1rem;
+  width: 4.46rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.cardIpt{
+  width: 100%;
+  line-height: .94rem;
+  background: #fff;
+  margin-top: .32rem;
   text-align: center;
 }
 
+.cardIpt input{
+  width: 6.9rem;
+  border: 0;
+  font-size: .28rem;
+  outline: none;
+}
 
+.cardBox{
+  border-bottom: .02rem solid #c8c8c8;
+}
 
+.cardBtn{
+  margin: .4rem .2rem .2rem;
+  line-height: .84rem;
+  font-size: .32rem;
+  background: #0092d8;
+  text-align: center;
+  border-radius: .1rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.cardBox .btnItem1{
+  margin: 0 .2rem .4rem;
+}
+
+.cardFont{
+  padding: .4rem .2rem 0;
+  color: #666;
+  font-size: .28rem;
+  text-align: center;
+}
+
+#cardBg{
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, .2);
+}
+
+#cardFrame{
+  position: fixed;
+  top: 2.7rem;
+  left: 2.26rem;
+  width: 3rem;
+  height: 1.82rem;
+  background: rgba(0, 0, 0, .5);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: .26rem;
+}
+
+#cardFrame span{
+  width: .6rem;
+  height: .6rem;
+  border: .02rem solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: .6rem;
+  font-size: .46rem;
+  color: #fff;
+  margin-bottom: .25rem;
+}
+
+#cardFrame p{
+  font-size: .28rem;
+  color: #fff;
+}
 
 
 

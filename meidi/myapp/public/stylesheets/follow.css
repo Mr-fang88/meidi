@@ -10,11 +10,12 @@ body{
   display: flex;
 }
 
-.followHeader i{
+.followHeader a i{
   width: 1.2rem;
   text-align: center;
   font-size: .36rem;
   color: #0093d5;
+  margin: auto .48rem;
 }
 
 .followHeader p{

@@ -46,9 +46,29 @@ router.get('/center/follow', function(req,res,next){
   res.render('follow',{})
 })
 
+// 积分
+router.get('/center/integral', function(req,res,next){
+  res.render('integral',{})
+})
+
+// 优惠券
+// router.get('/center/coupon', function(req,res,next){
+//   res.render('coupon',{})
+// })
+
 // 礼品卡
 router.get('/center/card', function(req,res,next){
   res.render('card',{})
+})
+
+// 我的拼团
+router.get('/center/group', function(req,res,next){
+  res.render('group',{})
+})
+
+// 极速保价
+router.get('/center/insured', function(req,res,next){
+  res.render('insured',{})
 })
 
 

@@ -1,0 +1,101 @@
+/* body{
+  background: #f5f0ec;
+} */
+
+.integralHeader{
+  width: 100%;
+  background: #fff;
+  border-bottom: 0.02rem solid #d6d6d6;
+  line-height: 1.2rem;
+  display: flex;
+}
+
+.integralHeader a i{
+  width: 1.2rem;
+  text-align: center;
+  font-size: .36rem;
+  color: #0093d5;
+  margin: auto .48rem;
+}
+
+.integralHeader p{
+  font-size: .36rem;
+  color: #0093d5;
+  font-family: Helvetica,STHeiti STXihei, Microsoft JhengHei, Microsoft YaHei, Arial;
+  width: 5.1rem;
+  text-align: center;
+}
+
+.integralContent{
+  width: 6.96rem;
+  height: 3.18rem;
+  background: url("https://pic.mdcdn.cn/h5/pic/201907/5d26a853df404.svg");
+  margin: .28rem auto 0;
+  display: flex;
+  position: relative;
+}
+
+.integralBox{
+  display: flex;
+  flex-direction: column;
+  padding: .52rem 0 0 .6rem;
+}
+
+.integralBox p{
+  font-size: .24rem;
+  color: #fff;
+  line-height: .34rem;
+  margin-bottom: .04rem;
+}
+
+.integralBox span{
+  font-size: .8rem;
+  color: #fff;
+  line-height: 1.12rem;
+  margin-bottom: .14rem;
+}
+
+.integralBox a{
+  width: 1.68rem;
+  height: .6rem;
+  background: #fff;
+  color: #4385fc;
+  text-align: center;
+  line-height: .6rem;
+  font-size: .28rem;
+  border-radius: .3rem;
+}
+
+.integralBox1{
+  width: .04rem;
+  height: 1.84rem;
+  background: #e6e6e6;
+  margin-top: .66rem;
+  margin-left: 1.2rem;
+}
+
+.integralBox2{
+  display: flex;
+  flex-direction: column;
+  padding: .56rem 0 0 .58rem;
+}
+
+.integralBox2 p{
+  font-size: .24rem;
+  color: #fff;
+}
+
+.integralBox2 span{
+  font-size: .8rem;
+  line-height: 1.12rem;
+  color: #fff;
+  margin-bottom: .14rem;
+}
+
+.integralItem i{
+  font-size: .48rem;
+  color: #fff;
+  position: absolute;
+  top: .1rem;
+  right: .1rem;
+}

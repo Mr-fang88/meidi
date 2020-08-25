@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +10,35 @@
   <link rel="stylesheet" href="https://at.alicdn.com/t/font_2007327_9f4csgmczm7.css">
   <script src="/javascripts/rem.js"></script>
 </head>
+
 <body>
   <div class="cardHeader">
-    <i class="iconfont icon-right"></i>
-    <p>我的礼品卡</p>
+    <a href="http://localhost:3000/users/center" class="cardJt">
+      <i class="iconfont icon-right"></i>
+    </a>
+    <p class="cardItem1">我的礼品卡</p>
     <a href="" class="cardItem">
       <p>购买礼品卡</p>
     </a>
   </div>
+  <div class="cardIpt">
+    <input type="text" placeholder="请输入礼品卡卡密" id="ipt">
+  </div>
+  <div class="cardBox">
+    <div class="cardBtn btnItem">绑定到本账号</div>
+    <a href="">
+      <div class="cardBtn btnItem1">使用说明</div>
+    </a>
+  </div>
+  <div class="cardFont">您还没有礼品卡~</div>
+  <div id="cardBg"></div>
+  <div id="cardFrame">
+    <span>!</span>
+    <p>请输入礼品卡卡密~</p>
+  </div>
+
+  <script src="/javascripts/jquery.js"></script>
+  <script src="/javascripts/card.js"></script>
 </body>
+
 </html>

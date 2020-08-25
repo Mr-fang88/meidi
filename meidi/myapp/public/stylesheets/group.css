@@ -1,0 +1,42 @@
+body{
+  background: #f4f4f4;
+}
+
+.groupHeader{
+  width: 100%;
+  background: #fff;
+  line-height: .8rem;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.groupHeader a i{
+  width: 1.2rem;
+  text-align: center;
+  font-size: .36rem;
+  color: #0093d5;
+  margin: auto .48rem;
+}
+
+.groupHeader p{
+  font-size: .36rem;
+  color: #0093d5;
+  font-family: Helvetica,STHeiti STXihei, Microsoft JhengHei, Microsoft YaHei, Arial;
+  width: 5.1rem;
+  text-align: center;
+}
+
+.groupItem{
+  display: flex;
+  font-size: .28rem;
+  line-height: .9rem;
+  justify-content: center;
+  margin-top: .8rem;
+}
+
+.groupItem span{
+  color: #0092d8;
+}

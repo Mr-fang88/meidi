@@ -1,0 +1,134 @@
+body{
+  background: #f4f4f4;
+  position: relative;
+}
+
+.insuredHeader{
+  width: 100%;
+  background: #fff;
+  line-height: .88rem;
+  display: flex;
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99; */
+}
+
+.insuredHeader a i{
+  width: 1.2rem;
+  text-align: center;
+  font-size: .36rem;
+  color: #0093d5;
+  margin: auto .4rem;
+}
+
+.insuredHeader p{
+  font-size: .36rem;
+  color: #0093d5;
+  font-family: inherit;
+  width: 5.1rem;
+  text-align: center;
+}
+
+.insuredContent{
+  width: 6.7rem;
+  padding: .1rem .4rem;
+  background: #ffe2bf;
+}
+
+.insuredContent p{
+  line-height: .38rem;
+  text-align: center;
+}
+
+.insuredWrap{
+  display: flex;
+  padding: 0 1.28rem;
+  line-height: .92rem;
+  background: #fff;
+  border-bottom: .02rem solid #e3e3e3;
+  position: relative;
+  justify-content: space-between;
+  font-size: .26rem;
+  font-weight: 600;
+}
+
+.insuredWrapItem{
+  width: 2.46rem;
+  text-align: center;
+}
+
+.insuredWrapItem p{
+  display: inline-block;
+}
+
+.insuredWrapItem .active{
+  border-bottom: .04rem solid #0092d8;
+  color: #0092d8;
+}
+
+.insuredWrap a i{
+  font-size: .38rem;
+  color: #999;
+  position: absolute;
+  right: .3rem;
+}
+
+.insuredMsg{
+  padding-top: 1.4rem;
+  margin-bottom: .6rem;
+  text-align: center;
+  font-size: .24rem;
+  color: #999;
+  /* display: none; */
+}
+
+.insuredMsg p a{
+  color: #0092d8;
+  text-decoration: underline;
+}
+
+.insuredInput{
+  padding: .2rem .28rem;
+  text-align: center;
+  position: relative;
+  position: absolute;
+  top: 2.72rem;
+  left: 0;
+  display: none;
+}
+
+.insuredInput input{
+  width: 6.94rem;
+  height: .6rem;
+  text-indent: .56rem;
+  border: .02rem solid #e3e3e3;
+  outline: none;
+  border-radius: .1rem;
+  font-size: .26rem;
+}
+
+.insuredInput i{
+  font-size: .28rem;
+  color: #ccc;
+  position: absolute;
+  top: .4rem;
+  left: .5rem;
+}
+
+.insuredFooter{
+  width: 100%;
+  font-size: .24rem;
+  color: #999;
+  padding-top: 1.4rem;
+  text-align: center;
+  position: absolute;
+  top: 3.8rem;
+  display: none;
+}
+
+
+
+
+
+
