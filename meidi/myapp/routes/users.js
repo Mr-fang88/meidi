@@ -21,6 +21,12 @@ router.get('/Hualing', function(req, res, next) {
 router.get('/Swan', function(req, res, next) {
   res.render('Swan',{});
 });
+router.get('/colmo', function(req, res, next) {
+  res.render('colmo',{});
+});
+router.get('/group', function(req, res, next) {
+  res.render('group',{});
+});
 
 
 router.get('/lx', function(req, res, next) {
