@@ -1,0 +1,62 @@
+body{
+  background: #f4f4f4;
+  font-family: '微软雅黑';
+  position: relative;
+}
+
+.libraryHeader{
+  width: 100%;
+  background: #fff;
+  border-bottom: 0.02rem solid #d6d6d6;
+  line-height: 1.2rem;
+  display: flex;
+}
+
+.libraryHeader a i{
+  width: 1.2rem;
+  text-align: center;
+  font-size: .36rem;
+  color: #0093d5;
+  margin: auto .48rem;
+}
+
+.libraryHeader p{
+  font-size: .36rem;
+  color: #0093d5;
+  font-family: Helvetica,STHeiti STXihei, Microsoft JhengHei, Microsoft YaHei, Arial;
+  width: 5.1rem;
+  text-align: center;
+}
+
+.libraryWrap{
+  display: flex;
+  flex-direction: column;
+  padding: 0 .4rem;
+  margin-top: .4rem;
+}
+
+.libraryWrap p{
+  line-height: .38rem;
+  font-size: .28rem;
+  color: #666;
+}
+
+.libraryWrap a{
+  font-size: .28rem;
+  color: #0093d5;
+  margin-top: .2rem;
+}
+
+.libraryPosit{
+  position: absolute;
+  top: 7rem;
+  left: 1.79rem;
+}
+.libraryPosit p{
+  font-size: .28rem;
+  color: #666;
+}
+
+.libraryPosit p a{
+  color: #0093d5;
+}

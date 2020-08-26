@@ -61,6 +61,11 @@ router.get('/center/card', function(req,res,next){
   res.render('card',{})
 })
 
+// 评价管理
+router.get('/center/evaluate', function(req,res,next){
+  res.render('evaluate',{})
+})
+
 // 我的拼团
 router.get('/center/group', function(req,res,next){
   res.render('group',{})
@@ -69,6 +74,26 @@ router.get('/center/group', function(req,res,next){
 // 极速保价
 router.get('/center/insured', function(req,res,next){
   res.render('insured',{})
+})
+
+// 我的产品库
+router.get('/center/library', function(req,res,next){
+  res.render('library',{})
+})
+
+// 我的兑换
+router.get('/center/exchange', function(req,res,next){
+  res.render('exchange',{})
+})
+
+// 帮助中心
+router.get('/center/helpCenter', function(req,res,next){
+  res.render('helpCenter',{})
+})
+
+// 设置
+router.get('/center/setUp', function(req,res,next){
+  res.render('setUp',{})
 })
 
 

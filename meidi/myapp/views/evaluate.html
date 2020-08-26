@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/stylesheets/reset.css">
+  <link rel="stylesheet" href="/stylesheets/evaluate.css">
+  <script src="/javascripts/rem.js"></script>
+</head>
+<body>
+  <div class="evaluateHeader">
+    <div class="evaluateItem btn active">未评价</div>
+    <div class="evaluateItem btn1">已评价</div>
+  </div>
+  <div class="evaluateBox">
+    <div class="evaluateFont list1">
+      您没有未评价的商品哦
+    </div>
+    <div class="evaluateFont list">
+      您还没发表过评价
+    </div>
+  </div>
+  
+  <script src="/javascripts/jquery.js"></script>
+  <script>
+    $('.evaluateItem').on('click', function() {
+      $(this).addClass('active').siblings().removeClass('active')
+    })
+
+    $('.btn1').on('click', function() {
+      $('.list').show().siblings().hide()
+    })
+    
+    $('.btn').on('click', function() {
+      $('.list1').show().siblings().hide()
+    })
+  </script>
+</body>
+</html>

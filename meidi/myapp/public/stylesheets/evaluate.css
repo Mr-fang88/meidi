@@ -1,0 +1,57 @@
+body{
+  font-family: '微软雅黑';
+  position: relative;
+}
+
+.evaluateHeader{
+  border-bottom: .2rem solid #f5f0ec;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: .8rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.evaluateItem{
+  width: 3.74rem;
+  line-height: .8rem;
+  text-align: center;
+  color: #333;
+  font-size: .28rem;
+}
+
+.active{
+  color: #0093d5;
+  border-bottom: .04rem solid #0093d5;
+}
+
+.evaluateFont{
+  width: 100%;
+  padding: .4rem 0;
+  margin-top: 1.04rem;
+  font-size: .28rem;
+  color: #666;
+  line-height: .4rem;
+  text-align: center;
+  position: absolute;
+  top: 0;
+}
+
+.list{
+  display: none;
+}
+
+/* .evaluateFont1{
+  color: #666;
+  padding: .4rem 0;
+  font-size: .28rem;
+  line-height: .4rem;
+  position: absolute;
+  top: 1.04rem;
+  left: 2.8rem;
+} */
+
+
+

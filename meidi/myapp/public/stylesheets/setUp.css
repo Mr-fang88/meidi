@@ -1,0 +1,108 @@
+body{
+  background: #eef3fa;
+  font-family: '微软雅黑';
+}
+
+.setUpHeader{
+  width: 100%;
+  background: #fff;
+  line-height: .8rem;
+  display: flex;
+}
+
+.setUpHeader a i{
+  width: 1.2rem;
+  text-align: center;
+  font-size: .36rem;
+  color: #0093d5;
+  margin: auto .48rem;
+}
+
+.setUpHeader h1{
+  font-size: .36rem;
+  color: #0093d5;
+  font-family: Helvetica,STHeiti STXihei, Microsoft JhengHei, Microsoft YaHei, Arial;
+  width: 5.1rem;
+  text-align: center;
+}
+
+.setUpContainer{
+  margin-top: .4rem;
+  background: #fff;
+  border-top: .02rem solid #e6e6e6;
+  border-bottom: .02rem solid #e6e6e6;
+}
+
+.setUpBox{
+  display: flex;
+  flex-direction: column;
+}
+
+.setUpBox a{
+  margin-left: .4rem;
+  border-bottom: .02rem solid #e3e3e3;
+}
+
+.setUpBox .setUpDel{
+  border: none;
+}
+
+.setUpBox a li{
+  display: flex;
+  line-height: .98rem;
+  justify-content: space-between;
+  padding-right: .35rem;
+  color: #666;
+  font-size: .3rem;
+}
+
+.setUpBox a .setUpPic{
+  line-height: 1.48rem;
+}
+
+.setUpBox a li img{
+  width: .92rem;
+  height: .92rem;
+  border: .02rem solid #ccc;
+  border-radius: 50%;
+  margin-top: .28rem;
+}
+
+.setUpBox a li .setUpName{
+  color: #999;
+}
+
+.setUpName i{
+  font-size: .24rem;
+  color: #7d7d7d;
+}
+
+.setUpWrap{
+  background: #fff;
+  border-top: .02rem solid #e3e3e3;
+  border-bottom: .02rem solid #e3e3e3;
+  margin-top: .3rem;
+  line-height: .96rem;
+}
+
+.setUpItem{
+  margin-left: .4rem;
+  display: flex;
+  justify-content: space-between;
+  padding-right: .35rem;
+  font-size: .3rem;
+  color: #333;
+}
+
+.setUpItem i{
+  font-size: .24rem;
+  color: #7d7d7d;
+}
+
+.setUpList{
+  display: flex;
+}
+
+.setUpList span{
+  color: #999;
+}

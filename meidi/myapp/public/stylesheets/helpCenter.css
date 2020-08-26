@@ -1,0 +1,61 @@
+body{
+  background: #f4f4f4;
+  font-family: '微软雅黑';
+}
+
+.helpCenterHeader{
+  width: 100%;
+  background: #fff;
+  line-height: .8rem;
+  display: flex;
+}
+
+.helpCenterHeader a i{
+  width: 1.2rem;
+  text-align: center;
+  font-size: .36rem;
+  color: #0093d5;
+  margin: auto .48rem;
+}
+
+.helpCenterHeader h1{
+  font-size: .36rem;
+  color: #0093d5;
+  font-family: Helvetica,STHeiti STXihei, Microsoft JhengHei, Microsoft YaHei, Arial;
+  width: 5.1rem;
+  text-align: center;
+}
+
+.helpCenterContainer{
+  margin-top: .2rem;
+  background: #fff;
+  border-top: .02rem solid #e6e6e6;
+  border-bottom: .02rem solid #e6e6e6;
+}
+
+.helpCenterBox{
+  display: flex;
+  flex-direction: column;
+}
+
+.helpCenterBox a{
+  margin-left: .4rem;
+  border-bottom: .02rem solid #e3e3e3;
+}
+
+.helpCenterBox .helpCenterDel{
+  border: none;
+}
+
+.helpCenterBox a li{
+  display: flex;
+  line-height: .8rem;
+  justify-content: space-between;
+  padding-right: .35rem;
+  color: #333;
+  font-size: .26rem;
+}
+
+.helpCenterBox a li i{
+  color: #ccc;
+}

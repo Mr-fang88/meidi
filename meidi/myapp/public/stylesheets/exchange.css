@@ -1,0 +1,11 @@
+body{
+  font-family: '微软雅黑';
+}
+
+.exchangeHeader p{
+  font-size: .28rem;
+  color: #8a8a8f;
+  line-height: .42rem;
+  margin: .6rem 0;
+  text-align: center;
+}
