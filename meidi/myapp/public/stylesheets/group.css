@@ -1,0 +1,349 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+ul,li{list-style: none;}
+img{display: inline-block;}
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+body{
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    background: #fb3345 url("https://pic.mdcdn.cn/h5/img/act/2020/invite_618/banner2.jpg")0 0/100% auto no-repeat;
+}
+#app{
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0 .2rem;
+    padding-bottom: 1.4rem;
+}
+.floor {
+    margin-top: 4rem;
+    overflow: hidden;
+    margin-bottom: .61333rem;
+    border-radius: .26667rem;
+    background-color: #fff;
+    font-size: .32rem;
+}
+.floor .main-goods img.full{
+    width: 100%;
+    margin: 0 auto;
+    vertical-align: bottom;
+}
+.spliter{
+    position: relative;
+    height: 0;
+    border-top: 1px dashed #cd765f;
+}
+.spliter::before{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    content: "";
+    display: block;
+    overflow: hidden;
+    width: .37333rem;
+    height: .37333rem;
+    border-radius: 50%;
+    background-color: #fb3345;
+}
+.cle{
+    height: 0.5rem;
+}
+.spliter::after{
+    position: absolute;
+    right: -15px;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    content: "";
+    display: block;
+    overflow: hidden;
+    width: .37333rem;
+    height: .37333rem;
+    border-radius: 50%;
+    background-color: #fb3345;
+}
+.content{
+    overflow: hidden;
+    padding: .4rem .33333rem;
+}
+.desc{
+    margin-top: .3rem;
+    color: #999;
+    font-size: .25rem;
+}
+.header{
+    overflow: hidden;
+}
+.award-goods .title{
+    float: left;
+    vertical-align: middle;
+    width: 5rem;
+    border-right: 1px solid #eee;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #000;
+    text-decoration: none;
+    font-size: .35333rem;
+    font-weight: bold;
+}
+.award-goods .act-share{
+    float: right;
+    vertical-align: middle;
+    width: auto;
+    margin-left: .13333rem;
+    color: #e0615b;
+    font-size: .20667rem;
+}
+.act-share img{
+    width: .3rem;
+    vertical-align: middle;
+}
+.timer-wrapper{
+    margin-top: .3rem;
+    font-size: 0;
+    font-weight: 700;
+    overflow: hidden;
+}
+.timer-wrapper .timers .title{
+    font-size: 0.27rem;
+    display: inline-block;
+}
+.timer-wrapper .timers .timer-text{
+    display: inline-block;
+    font-size: 0.2rem;
+}
+.jion-num{
+    margin-top: .08rem;
+    color: #ea515f;
+    font-size: .29333rem;
+}
+.timer{
+    padding: .01rem .02rem;
+    border-radius: .13333rem;
+    color: #fff;
+    font-weight: 400;
+    background-color: #ea515f;
+}
+.invite-list{
+    overflow: hidden;
+    padding-top: .4rem;
+}
+.invite-list .list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.invite-list .list li{
+    box-sizing: border-box;
+    width: 1rem;
+    height: 1rem;
+    line-height: .9rem;
+    border-radius: 50%;
+    color: #fff;
+    font-size: .24667rem;
+    font-weight: 700;
+    text-align: center;
+    background-color: #fcb2a3;
+    border: 1px solid #ddd;
+}
+.invite-list .list li img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.invite-action{
+    padding-top: .3rem;
+}
+.invite-action .act-share{
+    width: 100%;
+    height: .8rem;
+    line-height: .8rem;
+    border-radius: 1.06667rem;
+    text-align: center;
+    font-weight: 700;
+    font-size: .3rem;
+    color: #fff;
+    background-color: #e75941;
+}
+.steps{
+    padding-top: .3rem;
+}
+.full{
+    width: 100%;
+    vertical-align: bottom;
+}
+.rule{
+    overflow: hidden;
+    margin:.6rem 0 .31333rem 0;
+    border-radius: .16667rem;
+    background-color: #fff;
+}
+.history-list{
+    text-align: center;
+    padding: .3rem .3rem;
+}
+.rule .list li{
+    margin-top: .1rem;
+}
+.rule .list li .title{
+    font-weight: bold;
+}
+.rule .list li p{
+    font-size: .24rem;
+}
+.floors{
+    overflow: hidden;
+    margin-bottom: .31333rem;
+    border-radius: .26667rem;
+    background-color: #fff;
+    font-size: .32rem;
+}
+.subscribe{
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: transparent;
+}
+.subscribe .act-sub{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #894a47;
+    background: #ffea8c url(//pic.mdcdn.cn/h5/img/act/2020/invite_618/btn_sub_bg.jpg) no-repeat 0 0/100% 100%;
+}
+.subscribe .btn{
+    width: 100%;
+    height: 1rem;
+    line-height: 1rem;
+    border-radius: 0;
+    text-align: center;
+    font-weight: bold;
+}
+.subscribe .act-cancel{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: none;
+    color: #ffbfc5;
+    background-color: #c9727a;
+}
+/* 遮罩 */
+.popupMike{
+    display: none;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+.Shopping_popup{
+    position: fixed;
+    top: 120px;
+    left: 50%;
+    width: 60%;
+    margin-left: -30%;
+    background: #fff;
+    border-radius: 5px;
+    z-index: 10000;
+    box-shadow: (0 0.05333rem 0.26667rem 0 rgba(0,0,0,.1))
+}
+.popup{
+    display: none;
+    /* opacity: 1; */
+    z-index: 10001;
+}
+.Shopping{
+    padding: 25px 20px 10px;
+    text-align: center;
+    font-size: 16px;
+}
+.mod_popup{
+    padding: 0 20px 10px;
+}
+.mod_popup{
+    font-size: 13px;
+    text-align: center;
+}
+.mod_popup p{
+    word-break: break-all;
+    text-align: left;
+    font-size: 13px;
+}
+.mod_popup_confirm{
+    margin-top: 15px;
+    text-align: center;
+    border-top: #eee solid 1px;
+}
+.mod_popup_btn{
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 46px;
+    line-height: 46px;
+    font-size: 15px;
+    color: #008fdb;
+}
+.mod_popup_btns{
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 46px;
+    line-height: 46px;
+    font-size: 15px;
+    color: #008fdb;
+}
+.mod_popup_btn::after{
+    content: " ";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: #eee;
+    right: 0;
+    top: 0;
+}
+.successfully{
+    position: fixed;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%);
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    width: 2rem;
+    height: 2rem;
+    border-radius: .2rem;
+    color: #fff;
+    display: none;
+    z-index: 10000;
+}
+.successfully i{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 36px;
+}
+.successfully p{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}

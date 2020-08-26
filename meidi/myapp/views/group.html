@@ -1,11 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/group.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_2016631_38bi72m494.css">
 </head>
+
 <body>
-    
+    <script src="/javascripts/jquery.js"></script>
+    <div id="app">
+        <div class="floor invite">
+            <div class="main-goods">
+                <!-- 商品详情页 -->
+                <a href="javascript:;">
+                    <img class="full" src="https://pic.mdcdn.cn/h5/pic/202007/5de02932c504.jpg@700w_520h_100Q.jpg"
+                        alt="">
+                </a>
+            </div>
+            <div class="spliter"></div>
+            <div class="content">
+                <div class="award-goods">
+                    <div class="header">
+                        <!-- 商品详情页 -->
+                        <a href="javascript:;">
+                            <p class="title ">0元拼布谷落地扇BG-F2</p>
+                        </a>
+                        <p class="act-share clicks">
+                            <img src="https://pic.mdcdn.cn/h5/img/act/2020/invite_618/share.png" alt="">
+                            分享
+                        </p>
+                    </div>
+                    <script>
+
+                    </script>
+                    <p class="desc">每周一9:00-周四23:59拼团成功即可参与抽奖，1人中奖全团有奖，本团所有成员都将获得一台布谷落地扇BG-F2，每周五上午10:00开奖</p>
+                </div>
+                <div class="timer-wrapper">
+                    <div class="timers">
+                        <p class="title">拼团结束倒计时</p>
+                        <p class="timer-text">
+                            <span class="timer" id="timer-day"></span>
+                            天
+                            <span class="timer" id="timer-hour"></span>
+                            时
+                            <span class="timer" id="timer-min"></span>
+                            份
+                            <span class="timer" id="timer-sec"></span>
+                            秒
+                        </p>
+                    </div>
+                    <script>
+                        $("#timer-day")
+                        var date = new Date('2021-1-1 15:30:00')
+                        // 毫秒数
+                        var ful = date.getTime()
+                        var timer = setInterval(() => {
+                            var nowTime = new Date()
+                            var nowScr = nowTime.getTime()
+                            var time = date - nowScr
+
+                            var day = parseInt(time / (24 * 3600 * 1000))
+                            // console.log(day);
+                            var hour = parseInt(time / (3600 * 1000) % 24)
+                            var min = parseInt(time / 1000 / 60 % 60)
+                            var sec = parseInt(time / 1000 % 60)
+
+                            $("#timer-day").html(day)
+                            $("#timer-hour").html(hour)
+                            $("#timer-min").html(min)
+                            $("#timer-sec").html(sec)
+                            if (time <= 0) {
+                                clearInterval(timer)
+                            }
+                        })
+                    </script>
+                    <p class="join-num">已有8872人参加</p>
+                </div>
+                <div class="invite-list">
+                    <ul class="list">
+                        <li class="member">
+                            <img src="https://filecmms.midea.com/ccrm-prod/userHeadImg/defaultHeadImg.png" alt="">
+                        </li>
+                        <li class="member clicks">+</li>
+                        <li class="member clicks">+</li>
+                    </ul>
+                </div>
+                <div class="invite-action">
+                    <div class="act-share clicks">邀请好友</div>
+                </div>
+                <div class="steps">
+                    <img src="https://pic.midea.cn/h5/img/act/2020/invite_618/game_steps.png?x-oss-process=image/format,webp/quality,Q_90&"
+                        alt="" class="full">
+                </div>
+            </div>
+        </div>
+        <div class="floor rule">
+            <img src="https://pic.midea.cn/h5/img/act/2020/invite_618/game_rule.png?x-oss-process=image/format,webp/quality,Q_90&"
+                alt="" class="full">
+            <div class="content">
+                <ol class="list">
+                    <li>
+                        <p class="title">1.活动时间：</p>
+                        <P>每周一 9:00-每周四23::59:59</P>
+                    </li>
+                    <li>
+                        <p class="title">2. 开奖时间：</p>
+                        <P>开奖时间：周五上午10点。</P>
+                    </li>
+                    <li>
+                        <p class="title">3. 拼团参与方式：</p>
+                        <P>发起新的拼团或者加入已开拼团。</P>
+                        <P>在活动周期内拼团未达到规定人数，拼团失败。</P>
+                    </li>
+                    <li>
+                        <p class="title">4. 开团资格：</p>
+                        <P>在同一活动周期内，同一名用户只可以开一个团。</P>
+                    </li>
+                    <li>
+                        <p class="title">5. 参团资格：</p>
+                        <P>只有通过活动页面注册的新用户才能参团，且仅能参团一次。</P>
+                    </li>
+                    <li>
+                        <p class="title">6. 中奖流程：</p>
+                        <P>在活动周期内，邀请规定数量的好友参与拼团，拼团成功后，该团成员获得抽奖资格。活动结束后，将在所具备抽奖资格的用户中随机抽取中奖团，中奖团的所有团成员将各获得一件奖品。</P>
+                    </li>
+                    <li>
+                        <p class="title">7. 中奖须知：</p>
+                        <P>奖品配送范围仅限中国大陆地区，奖品发货时间为开奖日后30个工作日内，中奖用户会有专人通知中奖，届时请提供收件地址及联系方式，并保证提供的信息准备无误。奖品图片仅供参考，请以收到的实物为准。
+                        </P>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="floors history">
+            <img class="full"
+                src="https://pic.midea.cn/h5/img/act/2020/invite_618/game_history.png?x-oss-process=image/format,webp/quality,Q_90&"
+                alt="中奖名单">
+            <div class=" history-list">
+                <ul class="list">
+                    <li>赛朋</li>
+                    <li>金赛英</li>
+                    <li>X</li>
+                </ul>
+            </div>
+        </div>
+        <div class="subscribe">
+            <div class="act-sub btn">订阅活动</div>
+            <div class="act-cancel btn">已订阅</div>
+        </div>
+    </div>
+    <div class="Shopping_popup popup">
+        <h3 class="Shopping ">分享提示</h3>
+        <div class="mod_popup">
+            <p>请复制链接发送给微信好友,邀请好友来助力吧</p>
+            <!-- <br> -->
+            <p>https://sale.midea.cn/act/2020/invite_new?mtag=30072.6.7&teamId=8847</p>
+        </div>
+        <div class="mod_popup_confirm">
+            <!-- 点击增加数据到购物车 -->
+            <span class="mod_popup_btn">取消</span>
+            <!-- 跳转购物车 -->
+            <span class="mod_popup_btns">一键复制链接</span>
+        </div>
+    </div>
+    <div class="popupMike"></div>
+    <div class="successfully">
+        <i class="iconfont icon-icon_duihao-xian"></i>
+        <p>复制成功</p>
+    </div>
+    <!-- 购物弹窗 -->
+    <script>
+        $(".clicks").on('click', function () {
+            $(".popupMike").css('display', 'block')
+            $(".popup").css('display', 'block')
+        })
+        $(".mod_popup_btn").on('click', function () {
+            $(".popup").css('display', 'none')
+            $(".popupMike").css('display', 'none')
+        })
+        $(".mod_popup_btns").on('click', function () {
+            $(".successfully").css('display','block')
+            setTimeout(() => {
+                $(".successfully").hide()
+                $(".popupMike").hide()
+            },3000)
+            $(".popup").css('display', 'none')
+        })
+    </script>
+    <script>
+        $(".act-sub").on('click', () => {
+            $(this).css('display', 'none')
+            $(".act-cancel").css({
+                'display': ' block',
+                'zIndex': 5
+            })
+        })
+    </script>
+    </div>
+    <script src="/javascripts/rem.js"></script>
 </body>
+
 </html>

@@ -27,6 +27,9 @@ router.get('/colmo', function(req, res, next) {
 router.get('/group', function(req, res, next) {
   res.render('group',{});
 });
+router.get('/products', function(req, res, next) {
+  res.render('products',{});
+});
 
 
 router.get('/lx', function(req, res, next) {
