@@ -47,5 +47,10 @@ router.get('/ProVip/MoreInterests',function(req,res,next){
   })
 })
 
+//智能场景购接口
+router.get('/Smart',function(req,res,next){
+  res.render('SmartShopping',{})
+})
+
 
 module.exports = router;
