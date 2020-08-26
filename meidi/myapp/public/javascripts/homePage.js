@@ -36,11 +36,11 @@ $(function () {
       }
     })
   }
-  ajax_goods('http://172.16.5.114:3000/goods', 'get', '#goods_ul')
-  ajax_goods('http://172.16.5.114:3000/goods_2', 'get', '#goods_ul_2')
-  ajax_goods('http://172.16.5.114:3000/goods_3', 'get', '#goods_ul_3')
-  ajax_goods('http://172.16.5.114:3000/goods_4', 'get', '#goods_ul_4')
-  ajax_goods('http://172.16.5.114:3000/goods_5', 'get', '#goods_ul_5')
+  ajax_goods('http://172.16.5.129:3000/goods', 'get', '#goods_ul')
+  ajax_goods('http://172.16.5.129:3000/goods_2', 'get', '#goods_ul_2')
+  ajax_goods('http://172.16.5.129:3000/goods_3', 'get', '#goods_ul_3')
+  ajax_goods('http://172.16.5.129:3000/goods_4', 'get', '#goods_ul_4')
+  ajax_goods('http://172.16.5.129:3000/goods_5', 'get', '#goods_ul_5')
 
 
   function dropDown() {
@@ -88,7 +88,7 @@ $(function () {
 
 
   let Seconds = () => {
-    let future = new Date('2020-8-26 10:00:00')
+    let future = new Date('2020-9-27 10:00:00')
     let dm = future.getTime()
     let m_s = setInterval(function () {
       let dq_time = new Date()

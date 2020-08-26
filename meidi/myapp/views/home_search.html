@@ -11,20 +11,103 @@
   <script src="/javascripts/rem.js"></script>
 </head>
 <body>
+  <!-- 搜索 -->
   <div class="header">
     <form action="" id="form">
-      <i class="iconfont icon-xiala"></i>
+      <i class="iconfont icon-xiala fanhui"></i>
       <div class="search">
         <i class="iconfont icon-sousuo"></i>
         <input type="text" id="inp_search">
-        <i class="inp_remove"></i>
+        <i class="inp_remove">×</i>
       </div>
-      <p class="search_click"></p>
+      <button type="button" class="search_click">搜索</button>
     </form>
+  </div>
+  <!-- 推荐 -->
+  <div class="recommended">
+    <p>推荐搜索</p>
+    <ul>
+      <li class="recom_list">
+        <a href="#">
+          布谷
+        </a>
+      </li>
+      <li class="recom_list">
+        <a href="#">
+          空调
+        </a>
+      </li>
+      <li class="recom_list">
+        <a href="#">
+          冰箱
+        </a>
+      </li>
+      <li class="recom_list">
+        <a href="#">
+          洗衣机
+        </a>
+      </li>
+      <li class="recom_list">
+        <a href="#">
+          厨房小电器
+        </a>
+      </li>
+      <li class="recom_list">
+        <a href="#">
+          厨房大电器
+        </a>
+      </li>
+      <li class="recom_list">
+        <a href="#">
+          生活家电
+        </a>
+      </li>
+      <li class="recom_list">
+        <a href="#">
+          热水器
+        </a>
+      </li>
+      <li class="recom_list">
+        <a href="#">
+          PRO会员价
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!-- 热卖商品 -->
+  <div class="selling_goosd">
+    <p class="selling">热卖商品</p>
+    <ul>
+      <li class="se_go_list">
+        <a href="#">
+          <img src="//pic.midea.cn/ImageStore/112919/pic/88c43566865a3127A31237/88c43566865a3127A31237_430*430.jpg?x-oss-process=image/format,webp/quality,Q_90&" alt="">
+          <div class="deteils">
+            <h4 class="name">【送智能音箱】450升对开门冰箱  纤薄机身 风冷无霜 BCD-450WKZM(E)</h4>
+            <p class="name_j">纤薄机身；风冷无霜；智能对开，专注细节；</p>
+            <div class="act_tag">
+              <span>限时特惠</span>
+              <span>满减</span>
+            </div>
+            <div class="price">
+              <p class="p_price">￥2999</p>
+              <p class="h_price">￥2469</p>
+              <span class="of_pro">PRO</span>
+            </div>
+          </div>
+          <p class="evaluation">评论<span>218</span>条</p>
+        </a>
+      </li>
+    </ul>
   </div>
 
 
 
+
   <script src="/javascripts/jQuery.js"></script>
+  <script>
+    $('.fanhui').on('click',() => {
+      location.href = 'http://localhost:3000'
+    })
+  </script>
 </body>
 </html>
