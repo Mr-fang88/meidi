@@ -47,6 +47,9 @@ router.get("/miao_promote03", function (resquest, response) {
   response.render("miao_promote03");
 })
 
+router.get('/goods_detail',function(resquest,response){
+  response.render('goods_detail')
+})
 
 
 module.exports = router;

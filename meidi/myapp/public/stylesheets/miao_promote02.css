@@ -9,6 +9,7 @@
 .content{
     position:absolute;
     left: 0;
+    top: 1.2rem;
 }
 #con_one{
     width: 100%;
@@ -40,6 +41,7 @@
 #link-06{
     top: 4.1rem;
 }
+
 
 /*      商品内容                       */
 
@@ -195,6 +197,9 @@
 .floor_long .content{
     position: relative;
 }
+.clear_top{
+    top: 0;
+}
 .content ul{
     overflow: hidden;
     width:7.06rem ;
@@ -274,4 +279,34 @@
     height: 0.2rem;
     background: url("/images/common_sp.png") no-repeat 0.02rem -1.36rem;
     margin-left: 0.1rem;
+}
+.widget_box{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.widget_item{
+    width:3.65rem;
+    height: 1.8rem;
+}
+.footer{
+    width: 100%;
+    height: 1.84rem;
+    background: url('/images/miao_promote02_back_btn.gif') no-repeat;
+    background-size: 100% auto;
+    position: relative;
+}
+.back_top,.back_header{
+    position: absolute;
+    top: 0.28rem;
+    width: 3.7rem;
+    height: 0.86rem;
+}
+
+.back_header{
+    right: 0;
 }
