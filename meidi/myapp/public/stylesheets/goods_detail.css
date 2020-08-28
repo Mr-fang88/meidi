@@ -548,34 +548,252 @@ body {
     margin-top: 0.24rem;
     background-color: #fff;
 }
-.rights_section{
+
+.rights_section {
     display: flex;
     justify-content: space-between;
 }
-.icon-quanxian,.icon-xuanzhong1{
+
+.icon-quanxian,
+.icon-xuanzhong1 {
     color: #0092d8 !important;
 }
-.rights_section span{
+
+.rights_section span {
     color: #333;
     font-size: 0.28rem;
     font-weight: 700;
 }
-.public_padding{
+
+.public_padding {
     width: 100%;
     padding: 0.32rem;
     box-sizing: border-box;
 }
-.rights_service{
+
+.rights_service {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
 }
-.service_item{
+
+.service_item {
     margin-right: 0.3rem;
     margin-bottom: 0.14rem;
     font-size: 0.24rem;
 }
-.icon-xuanzhong1{
+
+.icon-xuanzhong1 {
     font-size: 0.28rem;
     margin-right: 0.1rem;
+}
+
+/* 购买选项 */
+
+.buy_info {
+    width: 100%;
+    margin-top: 0.24rem;
+    background-color: #fff;
+}
+
+.buy_standards,
+.buy_address {
+    line-height: 0.4rem;
+    padding: 0.32rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.line {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 0.01rem;
+    width: 6.86rem;
+    transform: translateX(-50%) scaleY(0.2);
+    background-color: #999;
+}
+
+.buy_standards>div,
+.buy_address>div {
+    display: flex;
+}
+
+.opt_status,
+.opt_address {
+    font-size: 0.28rem;
+    font-weight: bold;
+    color: #333;
+    margin-right: 0.24rem;
+}
+
+.buy_standards>div p,
+.buy_address>div p {
+    color: #333;
+    font-size: 0.28rem;
+}
+
+.buy_address a {
+    color: #0092d8 !important;
+    font-size: 0.24rem;
+}
+
+/* 会员评价 */
+.member_assess {
+    width: 100%;
+    margin-top: 0.24rem;
+    background-color: #fff;
+}
+
+.assess_tit {
+    padding: 0.32rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total_num {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.total_num {
+    color: #333;
+    font-size: 0.32rem;
+    font-weight: 700;
+}
+
+.total_num span {
+    margin: 0 0.1rem;
+    font-size: 0.24rem;
+}
+
+.assess_all a {
+    color: #333;
+    font-size: 0.24rem;
+}
+
+.assess_tag {
+    padding: 0.32rem;
+    color: #333;
+}
+
+.assess_tag span {
+    display: inline-block;
+    height: 0.48rem;
+    text-align: center;
+    padding: 0 0.24rem;
+    margin-right: 0.16rem;
+    line-height: 0.48rem;
+    border-radius: 0.24rem;
+    font-size: 0.24rem;
+    background-color: rgba(0, 146, 216, 0.1);
+}
+
+.assess_list {
+    width: 100%;
+    padding: 0.4rem 0.32rem;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.assess_user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user_msg {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.user_photo {
+    height: 0.64rem;
+    width: 0.64rem;
+    border-radius: 50%;
+}
+
+.user_name {
+    margin: 0 0.12rem 0 0.16rem;
+    font-size: 0.28rem;
+}
+
+.user_msg i {
+    display: inline-block;
+    /* background-color: red; */
+    color: #d7ae4b;
+    font-size: 0.56rem;
+    height: 0.24rem;
+}
+
+.report_time {
+    font-size: 0.24rem;
+    color: #999;
+}
+
+.assess_con {
+    margin-top: 0.2rem;
+    line-height: 0.36rem;
+    font-size: 0.26rem;
+    color: #666;
+}
+
+.assess_pic_list {
+    margin-top: 0.12rem;
+    overflow: auto;
+}
+
+.assess_pic_list img {
+    height: 1.6rem;
+    width: 1.6rem;
+    margin-top: 0.16rem;
+    margin-right: 0.16rem;
+    border-radius: 0.2rem;
+}
+
+/* 产品推荐 */
+.recommendTab {
+    background-color: #fff;
+}
+
+.recommend_tit {
+    margin-top: 0.24rem;
+    padding: 0.36rem 0.32rem;
+    font-size: 0.32rem;
+    color: #333;
+    line-height: 0.4rem;
+    font-weight: 700;
+}
+
+.product {
+    /* box-sizing: border-box;
+    border-right: 1px solid #eee;
+    width: 2.24rem!important;
+    padding: 0 12px;
+    margin-left:0.8rem; */
+}
+.swiper-wrapper{
+    width:2.24rem;
+}
+
+.product img {
+    height: 2.24rem;
+    width: 2.24rem;
+}
+
+.info {
+    width: 2.24rem;
+    height: 0.5rem;
+    padding-bottom: 0.1rem;
+    font-size: 0.26rem;
+    color: #333;
+    overflow: hidden;
+    word-break: break-word;
+    white-space: wrap;
+    text-overflow: ellipsis;
 }

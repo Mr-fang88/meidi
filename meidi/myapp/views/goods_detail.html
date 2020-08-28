@@ -9,9 +9,11 @@
     <script src="/javascripts/rem.js"></script>
     <script src="/javascripts/swiper.js"></script>
     <script src="/javascripts/jquery.js"></script>
+    <script src="/javascripts/axios.js"></script>
+
     <link rel="stylesheet" href="/stylesheets/swiper.css">
     <link rel="stylesheet" href="/stylesheets/reset.css">
-    <link rel="stylesheet" href="https://at.alicdn.com/t/font_2028233_ud0ik2cz36.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_2028233_icfs6h8ko4m.css">
     <link rel="stylesheet" href="/stylesheets/goods_detail.css">
 </head>
 
@@ -199,14 +201,14 @@
                     <p>下单送小美智能音箱1个，赠品数量有限送完即止</p>
                 </div>
             </div>
-           
         </div>
+
         <!-- 会员权限 -->
         <div class="member_rights">
             <div class="rights_section public_padding">
                 <div class="section_con">
-                        <i class="iconfont icon-quanxian"></i>
-                        <span>会员放心购</span>
+                    <i class="iconfont icon-quanxian"></i>
+                    <span>会员放心购</span>
                 </div>
                 <div class="section_more">
                     <span style="font-weight:normal;font-size:0.24rem">查看更多</span>
@@ -231,14 +233,189 @@
                     <i class="iconfont icon-xuanzhong1"></i>
                     <span>延保服务</span>
                 </div>
+            </div>
+        </div>
+
+        <!-- 购买选项 -->
+        <div class="buy_info">
+            <div class="buy_standards">
+                <div>
+                    <h3 class="opt_status">已选</h3>
+                    <p>
+                        <span class="buy_color">极地白</span>/
+                        <span class="buy_specs">大三匹</span>/
+                        <span class="buy_num">1件</span>
+                    </p>
+                </div>
+                <i class="iconfont icon-icon_right_arrows public_icon"></i>
+                <div class="line"></div>
+            </div>
+            <div class="buy_address">
+                <div>
+                    <h3 class="opt_address">送至</h3>
+                    <p>
+                        广东省广州市天河区
+                    </p>
+                </div>
+                <span>
+                    <a href="javascript:;">无货</a>
+                    <i class="iconfont icon-icon_right_arrows public_icon"></i>
+                </span>
 
             </div>
         </div>
 
+        <!-- 会员评价 -->
+        <div class="member_assess">
+            <div class="assess_tit">
+                <div class="total_num">
+                    <p>会员评价</p>
+                    <span>(84)</span>
+                </div>
+                <div class="assess_all">
+                    <a href="javascript:;">查看全部</a>
+                    <i class="iconfont icon-icon_right_arrows public_icon"></i>
+
+                </div>
+            </div>
+            <div class="assess_tag">
+                <span class="assess_good">好&nbsp;<i>(27)</i></span>
+                <span class="assess_well">很好&nbsp;<i>(16)</i></span>
+            </div>
+            <div class="assess_list">
+                <div class="assess_user">
+                    <div class="user_msg">
+                        <img class="user_photo"
+                            src="https://filecmms.midea.com/ccrm-prod/userHeadImg/20200627/2b4b87f0-3b8e-48b4-ad1f-8c909fa72133.jpeg"
+                            alt="">
+                        <p class="user_name">何***东</p>
+                        <i class="iconfont icon-huangjinhuiyuan2"></i>
+                    </div>
+                    <p class="report_time">2020-07-19</p>
+                </div>
+                <div class="assess_con">产品好，服务好！</div>
+                <div class="assess_pic_list">
+                    <img src="//pic.mdcdn.cn/h5/pic/202007/af0ed1bb70c3fbc486bb50115c096c18.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 产品推荐 -->
+        <div class="recommendTab">
+            <div class="recommend_tit">为你推荐</div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide product">
+                        <a href="javascript:;">
+                            <img src="https://img.mdcdn.cn/ImageStore/148383/pic/2cc7bcadc6ba2d1dA14423/2cc7bcadc6ba2d1dA14423_280*280.jpg"
+                                alt="">
+                            <div class="info">
+                                中央空调一拖一 变频风管机 冷暖 2匹 WiFi智控 GRD51T2W/BP2N1-TR
+                            </div>
+                            <div class="price">
+                                ¥5699
+                                <i></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide product">
+                        <a href="javascript:;">
+                            <img src="https://img.mdcdn.cn/ImageStore/148383/pic/2cc7bcadc6ba2d1dA14423/2cc7bcadc6ba2d1dA14423_280*280.jpg"
+                                alt="">
+                            <div class="info">
+                                中央空调一拖一 变频风管机 冷暖 2匹 WiFi智控 GRD51T2W/BP2N1-TR
+                            </div>
+                            <div class="price">
+                                ¥5699
+                                <i></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide product">
+                        <a href="javascript:;">
+                            <img src="https://img.mdcdn.cn/ImageStore/148383/pic/2cc7bcadc6ba2d1dA14423/2cc7bcadc6ba2d1dA14423_280*280.jpg"
+                                alt="">
+                            <div class="info">
+                                中央空调一拖一 变频风管机 冷暖 2匹 WiFi智控 GRD51T2W/BP2N1-TR
+                            </div>
+                            <div class="price">
+                                ¥5699
+                                <i></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide product">
+                        <a href="javascript:;">
+                            <img src="https://img.mdcdn.cn/ImageStore/151575/pic/7db7fd1fd031743cA8784/7db7fd1fd031743cA8784_280*280.jpg"
+                                alt="">
+                            <div class="info">
+                                中央空调一拖一 变频风管机 冷暖 2匹 WiFi智控 GRD51T2W/BP2N1-TR
+                            </div>
+                            <div class="price">
+                                ¥5699
+                                <i></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+           new Swiper('.swiper-container', {
+                slidesPerView:2
+             
+                // autoplay: true, //可选选项，自动滑动
+            })
+        </script>
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+        <!-- 以下为测试代码 -->
+        <div id="itany">
+            <button @click="send">发送AJAX请求</button>
+
+            <!-- <button @click="sendGet">GET方式发送AJAX请求</button> -->
+
+        </div>
+        <!-- <script src="/javascripts/vue.js"></script>
+        <script>
+            window.onload = function () {
+                new Vue({
+                    el: '#itany',
+                    data: {
+                        getSqlData: ''
+                    },
+                    methods: {
+                        send() {
+                            axios({
+                                method: 'get',
+                                url: 'http://localhost:3000/users/message'
+                            }).then(function (resp) {
+
+                                this.getSqlData = resp.data
+                                console.log(this.getSqlData);
+                            }).catch(resp => {
+                                console.log('请求失败：' + resp.status + ',' + resp.statusText);
+                            });
+                        },
+
+                    }
+                });
+            }
+        </script>
+ -->
 
 
 

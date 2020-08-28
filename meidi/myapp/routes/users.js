@@ -51,6 +51,12 @@ router.get('/goods_detail',function(resquest,response){
   response.render('goods_detail')
 })
 
+router.get('/message',function(resquest,response){
+
+ console.log(111)
+ response.send({name:"张三"})
+})
+
 
 module.exports = router;
 
