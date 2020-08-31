@@ -66,6 +66,11 @@ router.get('/center/evaluate', function(req,res,next){
   res.render('evaluate',{})
 })
 
+// 退款售后
+router.get('/center/AfterSale', function(req,res,next){
+  res.render('AfterSale',{})
+})
+
 // 我的拼团
 router.get('/center/group', function(req,res,next){
   res.render('group',{})

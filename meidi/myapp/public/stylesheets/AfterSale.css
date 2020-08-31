@@ -1,0 +1,49 @@
+body{
+  background: #f4f4f4;
+  font-family: '微软雅黑';
+}
+
+.AfterSaleHeader{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.AfterSaleJt{
+  width: 1rem;
+  line-height: .88rem;
+  display: flex;
+  justify-content: center;
+  color: #0093d5;
+}
+
+.AfterSaleItem1{
+  font-size: .36rem;
+  color: #0093d5;
+  line-height: .88rem;
+}
+
+.AfterSaleItem{
+  width: 1rem;
+  line-height: .88rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.AfterSaleItem img{
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.AfterSaleWrap{
+  margin-top: 1.2rem;
+  color: #666;
+  text-align: center;
+  font-size: .28rem;
+}
