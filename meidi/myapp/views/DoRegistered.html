@@ -236,10 +236,10 @@
           type: 'post',
           data: {
             account: $('#account').val(),
-            psw: $('#psw').val()
+            psw: $('#psw').val(),
+            to_psw:$('#to_psw').val()
           },
           success: function (res) {
-            console.log($('#account').val())
             if (res.code === 1) {
               location.href = 'http://localhost:3000/login'
             }

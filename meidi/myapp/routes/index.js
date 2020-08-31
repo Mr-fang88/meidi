@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var { db } = require('../db/db');
+const { render } = require('pug');
 
 
 // 跨域
@@ -11,80 +12,29 @@ router.all('*',function(req,res,next){
 })
 
 // 商品列表---活动
-router.get('/goods',function(req,res){
-  let sql = `select * from goods`
-  db.query(sql,function(err,data){
-    if(err){
-      console.log(err)
-    } else {
-      res.send({
-        code:1,
-        data:data,
-        msg:'success'
-      })
-    }
+function goods_fz(url){
+  router.get(`/${url}`,function(req,res){
+    let sql = `select * from ${url}`
+    db.query(sql,function(err,data){
+      if(err){
+        console.log(err)
+      } else {
+        res.send({
+          code:1,
+          data:data,
+          msg:'success'
+        })
+      }
+    })
   })
-})
-// 商品列表---活动
-router.get('/goods_2',function(req,res){
-  let sql = `select * from goods_2`
-  db.query(sql,function(err,data){
-    if(err){
-      console.log(err)
-    } else {
-      res.send({
-        code:1,
-        data:data,
-        msg:'success'
-      })
-    }
-  })
-})
-// 商品列表---活动
-router.get('/goods_3',function(req,res){
-  let sql = `select * from goods_3`
-  db.query(sql,function(err,data){
-    if(err){
-      console.log(err)
-    } else {
-      res.send({
-        code:1,
-        data:data,
-        msg:'success'
-      })
-    }
-  })
-})
-// 商品列表---活动
-router.get('/goods_4',function(req,res){
-  let sql = `select * from goods_4`
-  db.query(sql,function(err,data){
-    if(err){
-      console.log(err)
-    } else {
-      res.send({
-        code:1,
-        data:data,
-        msg:'success'
-      })
-    }
-  })
-})
-// 商品列表---活动
-router.get('/goods_5',function(req,res){
-  let sql = `select * from goods_5`
-  db.query(sql,function(err,data){
-    if(err){
-      console.log(err)
-    } else {
-      res.send({
-        code:1,
-        data:data,
-        msg:'success'
-      })
-    }
-  })
-})
+}
+goods_fz('goods')
+goods_fz('goods_2')
+goods_fz('goods_3')
+goods_fz('goods_4')
+goods_fz('goods_5')
+
+
 // 商品详情页
 router.get('/details',function(req,res){
   let sql = `select * from goods_details`
@@ -174,6 +124,35 @@ router.get('/FridayPre',function(req,res){
     url_4:'//pic.midea.cn/h5/img/friday/header_h5_4.jpg?x-oss-process=image/format,webp/quality,Q_90&t=20160331',
 })
 })
+
+
+
+
+// banner 接口
+// img4  img5
+function banner_url(url){
+  router.get(`/${url}`,function(req,res){
+    res.render(`${url}`,{})
+  })
+  router.post(`/${url}`,function(req,res){
+    let sql = `select * from ${url}`
+    db.query(sql,function(err,data){
+      if(err){
+        console.log(err)
+      } else {
+        res.send({
+          code:1,
+          data:data,
+          msg:'success'
+        })
+      }
+    })
+  })
+}
+banner_url('banner_1')
+banner_url('banner_5')
+banner_url('banner_4')
+
 
 
 

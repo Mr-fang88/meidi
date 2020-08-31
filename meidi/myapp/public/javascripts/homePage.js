@@ -36,11 +36,11 @@ $(function () {
       }
     })
   }
-  ajax_goods('http://172.16.5.129:3000/goods', 'get', '#goods_ul')
-  ajax_goods('http://172.16.5.129:3000/goods_2', 'get', '#goods_ul_2')
-  ajax_goods('http://172.16.5.129:3000/goods_3', 'get', '#goods_ul_3')
-  ajax_goods('http://172.16.5.129:3000/goods_4', 'get', '#goods_ul_4')
-  ajax_goods('http://172.16.5.129:3000/goods_5', 'get', '#goods_ul_5')
+  ajax_goods('http://localhost:3000/goods', 'get', '#goods_ul')
+  ajax_goods('http://localhost:3000/goods_2', 'get', '#goods_ul_2')
+  ajax_goods('http://localhost:3000/goods_3', 'get', '#goods_ul_3')
+  ajax_goods('http://localhost:3000/goods_4', 'get', '#goods_ul_4')
+  ajax_goods('http://localhost:3000/goods_5', 'get', '#goods_ul_5')
 
 
   function dropDown() {
@@ -70,7 +70,7 @@ $(function () {
 
   function home_banner() {
     var swiper = new Swiper('.swiper-container', {
-      autoplay: true,
+      // autoplay: true,
       loop: 'true',
       pagination: {
         el: '.swiper-pagination',

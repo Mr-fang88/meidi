@@ -43,6 +43,7 @@
         <a href="http://localhost:3000/DoRegistered">注册</a>
       </div>
     </div>
+    <p class="prompt">账号或密码错误</p>
   </div>
   <script src="/javascripts/jQuery.js"></script>
   <script>
@@ -57,13 +58,14 @@
             psw:$('#psw').val()
           },
           success:function(res){
-            console.log($('#account').val())
-
-            if(res.code === 1){
-              if(res.data.account === $('#account').val() && res.data.password === $('#psw').val()){
-                console.log(res.data)
-                location.href = 'http://localhost:3000'
-              }
+            if(res.code === 1 && res.data !== undefined){
+              console.log(res.data)
+              location.href = 'http://localhost:3000'
+            }else{
+              $('.prompt').css("display","block")
+              setTimeout(function(){
+                $('.prompt').css("display","none")
+              },2000)
             }
           }
         })

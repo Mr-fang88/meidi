@@ -115,3 +115,17 @@ input{
   line-height: .86rem;
   border-radius: .1rem;
 }
+.prompt{
+  color: #fff;
+  width: 3rem;
+  height: .9rem;
+  background-color: rgba(66, 66, 66, 0.8);
+  font-size: .34rem;
+  text-align: center;
+  line-height: .9rem;
+  border-radius: .2rem;
+  position: absolute;
+  left: calc(50% - 1.5rem);
+  top: 3.3rem;
+  display: none;
+}
