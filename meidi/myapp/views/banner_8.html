@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>轻净厨房 健康好水</title>
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_2019043_ulp21y23efe.css">
+  <link rel="shortcut icon" href="https://pic.midea.cn/pc/img/common/favicon.ico">
+  <link rel="stylesheet" href="/stylesheets/reset.css">
+  <script src="/javascripts/rem.js"></script>
+  <style>
+    .floor{
+      width: 100%;
+    }
+    .floor img{
+      display: block;
+      width: 100%;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+
+  <script src="/javascripts/jQuery.js"></script>
+
+  <script>
+    $.ajax({
+      url:'http://localhost:3000/banner_8',
+      type:'post',
+      success:function(res){
+        const url = eval("(" + res.data[0].banner_url + ")")
+        for(var v of url){
+          let html = `
+          <div class="floor">
+            <div class="floor_bg">
+              <img src="${v}" alt="">
+            </div>
+          </div>
+          `
+          $('.box').append(html)
+        }
+      }
+    })
+
+  </script>
+</body>
+</html>

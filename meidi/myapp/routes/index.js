@@ -37,6 +37,7 @@ goods_fz('goods_5')
 
 // 商品详情页
 router.get('/details',function(req,res){
+  console.log(111111111);
   let sql = `select * from goods_details`
   db.query(sql,function(err,data){
     if(err){
@@ -150,8 +151,14 @@ function banner_url(url){
   })
 }
 banner_url('banner_1')
-banner_url('banner_5')
+banner_url('banner_3')
 banner_url('banner_4')
+banner_url('banner_5')
+banner_url('banner_6')
+banner_url('banner_7')
+banner_url('banner_8')
+banner_url('banner_9')
+banner_url('banner_10')
 
 
 
