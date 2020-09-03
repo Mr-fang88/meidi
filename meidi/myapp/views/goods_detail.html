@@ -13,417 +13,700 @@
 
     <link rel="stylesheet" href="/stylesheets/swiper.css">
     <link rel="stylesheet" href="/stylesheets/reset.css">
-    <link rel="stylesheet" href="https://at.alicdn.com/t/font_2028233_icfs6h8ko4m.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_2028233_z9nxh4qm3c.css">
     <link rel="stylesheet" href="/stylesheets/goods_detail.css">
 </head>
 
 <body>
-    <!-- 头部信息 -->
-    <div class="header clearfix">
-        <div class="header_left">
-            <i class="iconfont icon-fanhui icon_btn "></i>
-        </div>
-        <ul class="header_md">
-            <li>商品</li>
-            <li>评价</li>
-            <li>推荐</li>
-            <li>详情</li>
-        </ul>
-        <div class="header_right">
-            <i class="iconfont icon-fenxiang_2 icon_btn "></i>
 
-        </div>
-    </div>
 
-    <!-- 商品信息展示 -->
-    <div class="main_wrap">
-        <!-- 公告 -->
-        <div class="main_notice">
-            <i class="main_no_logo"></i>
-            <div class="main_no_message ">【通知】受疫情管控政策影响，新疆、辽宁大连等地发货/配送效有所延迟，对您造成的不便，敬请谅解！</div>
-            <i class="main_no_down"></i>
+
+    <div id="itany">
+        <!-- 头部信息 -->
+        <div class="header clearfix">
+            <div class="header_left">
+                <i class="iconfont icon-fanhui icon_btn "></i>
+            </div>
+            <ul class="header_md">
+                <li class=" header_item header_md_active">商品</li>
+                <li>评价</li>
+                <li>推荐</li>
+                <li>详情</li>
+            </ul>
+            <div class="header_right">
+                <i class="iconfont icon-fenxiang_2 icon_btn "></i>
+            </div>
         </div>
 
-        <!-- 商品图品轮播 -->
-        <div class="main_banner">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="https://pic.midea.cn/ImageStore/195926/pic/ed1a580b91d2de28A27963/ed1a580b91d2de28A27963_640*640_50.jpg"
-                            alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://pic.midea.cn/ImageStore/195926/pic/93288bbff0424533A13932/93288bbff0424533A13932_640*640_50.jpg"
-                            alt="">
-
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://pic.midea.cn/ImageStore/195926/pic/83eceb93a42994fbA25863/83eceb93a42994fbA25863_640*640_50.jpg"
-                            alt="">
-
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://pic.midea.cn/ImageStore/195926/pic/baa1ba7fb485c76fA13226/baa1ba7fb485c76fA13226_640*640_50.jpg"
-                            alt="">
-
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://pic.midea.cn/ImageStore/195926/pic/50ecae011e57d192A13216/50ecae011e57d192A13216_640*640_50.jpg"
-                            alt="">
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
+        <!-- 商品信息展示 -->
+        <div class="main_wrap backTop">
+            <!-- 公告 -->
+            <div class="main_notice">
+                <i class="main_no_logo"></i>
+                <div class="main_no_message ">【通知】受疫情管控政策影响，新疆、辽宁大连等地发货/配送效有所延迟，对您造成的不便，敬请谅解！</div>
+                <i class="main_no_down"></i>
             </div>
 
-        </div>
+            <!-- 商品图品轮播 -->
+            <div class="main_banner">
+                <div class="swiper-container banner_wraper">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide" v-for="item in banner">
+                            <img :src="item"
+                                alt="">
+                        </div>
+                        <!-- <div class="swiper-slide">
+                            <img src="https://pic.midea.cn/ImageStore/195926/pic/93288bbff0424533A13932/93288bbff0424533A13932_640*640_50.jpg"
+                                alt="">
 
-        <!--  限时抢购-->
-        <div class="act_emphais">
-            <div class="act_left">
-                <div class="act_time">限时24小时抢购</div>
-                <div class="act_price">
-                    <span>￥</span>
-                    <i>2099</i>
-                    <del>￥2499</del>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://pic.midea.cn/ImageStore/195926/pic/83eceb93a42994fbA25863/83eceb93a42994fbA25863_640*640_50.jpg"
+                                alt="">
+
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://pic.midea.cn/ImageStore/195926/pic/baa1ba7fb485c76fA13226/baa1ba7fb485c76fA13226_640*640_50.jpg"
+                                alt="">
+
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://pic.midea.cn/ImageStore/195926/pic/50ecae011e57d192A13216/50ecae011e57d192A13216_640*640_50.jpg"
+                                alt="">
+                        </div> -->
+                   
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+
+            <!--  限时抢购-->
+            <div class="act_emphais">
+                <div class="act_left">
+                    <div class="act_time">限时24小时抢购</div>
+                    <div class="act_price">
+                        <span>￥</span>
+                        <i>2099</i>
+                        <del>￥2499</del>
+                        <div>
+                            <i>PRO</i>
+                            <span>￥1994</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="act_right">
+                    <p class="range">距活动结束</p>
+                    <div class="countdown">
+                        <span class="hours">24</span>:
+                        <span class="minutes">55</span>:
+                        <span class="seconds">55</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 开通会员 -->
+            <div class="open_member">
+                <div class="open_mem_entrence">
+                    <p>开通PRO会员，预计可省275元<i class="iconfont icon-jinggao"></i></p>
+                    <a href="javascript:;">立即开卡<i class="iconfont icon-icon_right_arrows"></i></a>
+                </div>
+            </div>
+            <!-- 活动类型 -->
+            <div class="activity_type">
+                <span>PRO精选</span>
+                <span>限时24小时抢购</span>
+                <span>满赠</span>
+            </div>
+
+
+            <!-- 商品属性 -->
+            <div class="goods_info">
+                <div class="title_wrap">
+                    <div class="title_con">
+                        <span>自营</span>
+                        【送赠】美的空调 新能效智弧 智能变频冷暖大1.5匹壁挂式智控温 KFR-35GW/N8MJA3
+                        <div class="like_btn">
+                            <i class="iconfont icon-shoucang2"></i>
+                            <span>关注</span>
+                        </div>
+                    </div>
+                    <a href="miao_promote02">
+                        <div class="goods_world">
+                            买即送小美智能音箱，赠品数量有限，送完即止
+                            <span>详情<i class="iconfont icon-icon_right_arrows"></i></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="goods_property">
+                    <div class="property_list">
+                        <div class="property_item">
+                            <img src="https://pic.midea.cn/CategoryIcon/30/icon_30_128.png" alt="">
+                            <h4>冷暖</h4>
+                            <p>冷暖类型</p>
+                        </div>
+                        <div class="property_item">
+                            <img src="https://pic.midea.cn/CategoryIcon/30/icon_30_129.png" alt="">
+                            <h4>变频</h4>
+                            <p>空调技术</p>
+                        </div>
+                        <div class="property_item">
+                            <img src="https://pic.midea.cn/CategoryIcon/30/icon_30_130.png" alt="">
+                            <h4>三级</h4>
+                            <p>能效等级</p>
+                        </div>
+                        <div class="property_item">
+                            <img src="https://pic.midea.cn/CategoryIcon/30/icon_30_139.png" alt="">
+                            <h4>1.5匹</h4>
+                            <p>空调匹数</p>
+                        </div>
+                        <div class="property_item">
+                            <img src="https://pic.midea.cn/CategoryIcon/30/icon_30_140.png" alt="">
+                            <h4>15~23</h4s>
+                                <p>制冷适用面积（m2）</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 关注覆盖层 -->
+            <div class="global_cover like_cover">
+                <div class="like_cover_con">
+                    <i class="iconfont icon-shoucang2 big_heart"></i>
+                    <i class="iconfont icon-duihao sure"></i>
+                    <span>关注成功</span>
+                </div>
+            </div>
+
+            <!-- 商品积分 -->
+            <div class="integral">
+                <div class="get_integral">
+                    <i class="iconfont icon-jifen"></i>
+                    <p>预计最高得<span>209积分</span></p>
+                </div>
+                <div class="look_integral">
+                    <span>查看</span>
+                    <i class="iconfont icon-icon_right_arrows public_icon"></i>
+                </div>
+            </div>
+            <!-- 积分遮照层 -->
+            <div class="global_cover inter_show">
+                <div class="cover_con">
+                    <div class="cover_con_tit">
+                        积分优惠
+                        <i class="iconfont icon-guanbi inter_close"></i>
+                    </div>
+                    <div class="inter_con">
+                        <div class="shop_score">购物积分</div>
+                        <div class="max_score">预计最高得<span>209积分</span></div>
+                        <div class="haved_score">
+                            <span>已有积分:</span>
+                            <i>20</i>
+                            <span>最多可抵现:</span>
+                            <i>￥0</i>
+                        </div>
+
+                        <div class="inter_clo">
+                            关闭
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 商品优惠汇总 -->
+            <div class="activity_total">
+                <div class="act_total_con">
+                    <div class="act_total_type">
+                        <h3 class="total_tag">活动</h3>
+                        <span class="total_tag_tit">领券</span>
+                        <span class="total_tag_small"> 满1000减100</span>
+                        <span class="total_tag_big"> 满5000减500</span>
+                    </div>
+                    <i class="iconfont icon-icon_right_arrows public_icon"></i>
+                </div>
+                <div class="discount_con">
+                    <div class="discount_price con_flex">
+                        <span>限时折扣</span>
+                        <p>限时24小时抢购</p>
+                    </div>
+                    <div class="discount_suit con_flex">
+                        <span>场景套装</span>
+                        <p>满2个品类满3000.00元打9.50折</p>
+                    </div>
+                    <div class="discount_price con_flex">
+                        <span>满赠</span>
+                        <p>下单送小美智能音箱1个，赠品数量有限送完即止</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 会员权限 -->
+            <div class="member_rights">
+                <div class="rights_section public_padding">
+                    <div class="section_con">
+                        <i class="iconfont icon-quanxian"></i>
+                        <span>会员放心购</span>
+                    </div>
+                    <div class="section_more">
+                        <span style="font-weight:normal;font-size:0.24rem">查看更多</span>
+                        <i class="iconfont icon-icon_right_arrows public_icon"></i>
+                    </div>
+                </div>
+
+                <div class="rights_service public_padding">
+                    <div class="service_item">
+                        <i class="iconfont icon-xuanzhong1"></i>
+                        <span>全国联保</span>
+                    </div>
+                    <div class="service_item">
+                        <i class="iconfont icon-xuanzhong1"></i>
+                        <span>全程包邮</span>
+                    </div>
+                    <div class="service_item">
+                        <i class="iconfont icon-xuanzhong1"></i>
+                        <span>7天无理由退换货</span>
+                    </div>
+                    <div class="service_item">
+                        <i class="iconfont icon-xuanzhong1"></i>
+                        <span>延保服务</span>
+                    </div>
+                </div>
+            </div>
+            <!-- 会员积分覆盖层 -->
+            <div class="global_cover mem_cover">
+                <div class="mem_con">
+                    <i class="iconfont icon-guanbi"></i>
+                    <div class="mem_header">
+                        <p class="mem_header_tit"><i class="iconfont icon-quanxian"></i>会员放心购</p>
+                        <p class="header_desc">本页面服务内容与会员等级、购买品类、收货地址等因素相关，具体可享受的服务以申请售后页面信息以及各权益详细说明为准</p>
+                    </div>
+                    <div class="mem_content">
+                        <div class="mem_base">
+                            <div class="mem_tit">基础服务</div>
+                            <div class="mem_detail">
+                                <div class="left_detail">保</div>
+                                <div class="right_detail">
+                                    <p>全国联保</p>
+                                    <span>美的唯一官方商城，商品保修期内可支持全国联保</span>
+                                </div>
+                            </div>
+                            <div class="mem_detail">
+                                <div class="left_detail">邮</div>
+                                <div class="right_detail">
+                                    <p>全场包邮</p>
+                                    <span>全场商品购买时享受包邮服务</span>
+                                </div>
+                            </div>
+                            <div class="mem_detail">
+                                <div class="left_detail">7</div>
+                                <div class="right_detail">
+                                    <p>7天无理由退换货</p>
+                                    <span>签收后7日内不影响二次销售，可无理由退换货</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mem_promote">
+                            <div class="mem_tit">
+                                升级服务
+                            </div>
+                            <div class="mem_detail">
+                                <div class="left_detail chang_bg01">保</div>
+                                <div class="right_detail">
+                                    <p>钻石会员顺丰包邮</p>
+                                    <span>指定小家电品类，钻石会员可以享受顺丰包邮服务</span>
+                                </div>
+                            </div>
+                            <div class="mem_detail">
+                                <div class="left_detail chang_bg02">延</div>
+                                <div class="right_detail">
+                                    <p>全国联保</p>
+                                    <span>美的唯一官方商城，商品保修期内可支持全国联保</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mem_member">
+                            <div class="mem_tit">
+                                PRO会员专享服务
+                            </div>
+                            <div class="mem_detail">
+                                <div class="left_detail chang_bg01">30</div>
+                                <div class="right_detail">
+                                    <p>PRO会员30天价保</p>
+                                    <span>PRO会员专享全场家电30天保价服务</span>
+                                </div>
+                            </div>
+                            <div class="mem_detail">
+                                <div class="left_detail chang_bg02">延</div>
+                                <div class="right_detail">
+                                    <p>免费延保</p>
+                                    <span>PRO会员每年可领取1次免费1年延保服务</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mem_footer fixed_footer">
+                        关闭
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 购买选项 -->
+            <div class="buy_info">
+                <div class="buy_standards">
                     <div>
-                        <i>PRO</i>
-                        <span>￥1994</span>
+                        <h3 class="opt_status">已选</h3>
+                        <p>
+                            <span class="buy_color">极地白</span>/
+                            <span class="buy_specs">大三匹</span>/
+                            <span class="buy_num">1件</span>
+                        </p>
+                    </div>
+                    <i class="iconfont icon-icon_right_arrows public_icon"></i>
+                    <div class="line"></div>
+                </div>
+                <div class="buy_address">
+                    <div>
+                        <h3 class="opt_address">送至</h3>
+                        <p>
+                            广东省广州市天河区
+                        </p>
+                    </div>
+                    <span>
+                        <a href="javascript:;">无货</a>
+                        <i class="iconfont icon-icon_right_arrows public_icon"></i>
+                    </span>
+
+                </div>
+            </div>
+
+            <!-- 会员评价 -->
+            <div class="member_assess backTop">
+                <div class="assess_tit">
+                    <div class="total_num">
+                        <p>会员评价</p>
+                        <span>(84)</span>
+                    </div>
+                    <div class="assess_all">
+                        <a href="javascript:;">查看全部</a>
+                        <i class="iconfont icon-icon_right_arrows public_icon"></i>
+
+                    </div>
+                </div>
+                <div class="assess_tag">
+                    <span class="assess_good">好&nbsp;<i>(27)</i></span>
+                    <span class="assess_well">很好&nbsp;<i>(16)</i></span>
+                </div>
+                <div class="assess_list">
+                    <div class="assess_user">
+                        <div class="user_msg">
+                            <img class="user_photo"
+                                src="https://filecmms.midea.com/ccrm-prod/userHeadImg/20200627/2b4b87f0-3b8e-48b4-ad1f-8c909fa72133.jpeg"
+                                alt="">
+                            <p class="user_name">何***东</p>
+                            <i class="iconfont icon-huangjinhuiyuan2"></i>
+                        </div>
+                        <p class="report_time">2020-07-19</p>
+                    </div>
+                    <div class="assess_con">产品好，服务好！</div>
+                    <div class="assess_pic_list">
+                        <img src="//pic.mdcdn.cn/h5/pic/202007/af0ed1bb70c3fbc486bb50115c096c18.jpg" alt="">
                     </div>
                 </div>
             </div>
-            <div class="act_right">
-                <p class="range">距活动结束</p>
-                <div class="countdown">
-                    <span class="hours">24</span>:
-                    <span class="minutes">55</span>:
-                    <span class="seconds">55</span>
+
+
+            <!-- 产品推荐 -->
+            <div class="recommendTab backTop">
+                <div class="recommend_tit">为你推荐</div>
+                <div class="swiper-container recommend_box">
+                    <div class="swiper-wrapper recommend_box0">
+                        <div class="swiper-slide product">
+
+                            <a href="javascript:;">
+                                <img src="https://img.mdcdn.cn/ImageStore/148383/pic/2cc7bcadc6ba2d1dA14423/2cc7bcadc6ba2d1dA14423_280*280.jpg"
+                                    alt="">
+                                <div class="info">
+                                    中央空调一拖一 变频风管机 冷暖 2匹 WiFi智控 GRD51T2W/BP2N1-TR
+                                </div>
+                                <div class="price">
+                                    ¥5699
+                                    <i class="iconfont icon-gouwuche rec_cart"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide product">
+
+                            <a href="javascript:;">
+                                <img src="https://img.mdcdn.cn/ImageStore/148383/pic/2cc7bcadc6ba2d1dA14423/2cc7bcadc6ba2d1dA14423_280*280.jpg"
+                                    alt="">
+                                <div class="info">
+                                    美的中央空调一拖一变频风管机冷暖大1匹 WiFi智控 GRD26T2W/BP2N1-TR
+                                </div>
+                                <div class="price">
+                                    ¥4799
+                                    <i class="iconfont icon-gouwuche rec_cart"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide product">
+
+                            <a href="javascript:;">
+                                <img src="https://img.mdcdn.cn/ImageStore/148383/pic/2cc7bcadc6ba2d1dA14423/2cc7bcadc6ba2d1dA14423_280*280.jpg"
+                                    alt="">
+                                <div class="info">
+                                    美的中央空调一拖一变频风管机 冷暖 1.5匹 WiFi智控 GRD35T2W/BP2N1-TR
+                                </div>
+                                <div class="price">
+                                    ¥4999
+                                    <i class="iconfont icon-gouwuche rec_cart"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide product">
+
+                            <a href="javascript:;">
+                                <img src="https://img.mdcdn.cn/ImageStore/151575/pic/7db7fd1fd031743cA8784/7db7fd1fd031743cA8784_280*280.jpg"
+                                    alt="">
+                                <div class="info">
+                                    【钜惠】空调大2匹 一级能效变频冷暖 智能无风感 KFR-51LW/WYSN8A1@
+                                </div>
+                                <div class="price">
+                                    ¥7099
+                                    <i class="iconfont icon-gouwuche rec_cart"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
+            </div>
+
+            <!-- 产品信息列表 -->
+            <div class="product_info_wrap  backTop">
+                <ul class="nav_info_list">
+                    <li>详情</li>
+                    <li>产品参数</li>
+                    <li>服务支持</li>
+                </ul>
+                <div class="detail_img_wrap">
+                    <img class="detail_img"
+                        src="https://pic.midea.cn/ImageStore/195926/detail/5e5e981429862861A32630/5e5e981429862861A32630.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
+                        data-src="https://pic.midea.cn/ImageStore/195926/detail/5e5e981429862861A32630/5e5e981429862861A32630.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
+                        alt="商品详情" data-loaded="1">
+                    <img class="detail_img"
+                        src="https://pic.midea.cn/ImageStore/195926/detail/7cd9c1a5661e0cafA32636/7cd9c1a5661e0cafA32636.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
+                        data-src="https://pic.midea.cn/ImageStore/195926/detail/7cd9c1a5661e0cafA32636/7cd9c1a5661e0cafA32636.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
+                        alt="商品详情" data-loaded="1">
+                    <img class="detail_img"
+                        src="https://pic.midea.cn/ImageStore/195926/detail/0053f0012b707fa8A1238/0053f0012b707fa8A1238.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
+                        data-src="https://pic.midea.cn/ImageStore/195926/detail/0053f0012b707fa8A1238/0053f0012b707fa8A1238.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
+                        alt="商品详情" data-loaded="1">
+
+
+
+                    <img class="detail_img"
+                        src="https://pic.midea.cn/ImageStore/195926/detail/bf03402ca8f3e9e6A1004/bf03402ca8f3e9e6A1004.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
+                        data-src="https://pic.midea.cn/ImageStore/195926/detail/bf03402ca8f3e9e6A1004/bf03402ca8f3e9e6A1004.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
+                        alt="商品详情" data-loaded="1">
+
+
+
+                    <img class="detail_img"
+                        src="https://pic.midea.cn/ImageStore/195926/detail/5333ed7e082187bfA807/5333ed7e082187bfA807.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
+                        data-src="https://pic.midea.cn/ImageStore/195926/detail/5333ed7e082187bfA807/5333ed7e082187bfA807.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
+                        alt="商品详情" data-loaded="1">
+
+
+
+                    <img class="detail_img"
+                        src="https://pic.midea.cn/ImageStore/195926/detail/91c674ac2b89dde9A373/91c674ac2b89dde9A373.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
+                        data-src="https://pic.midea.cn/ImageStore/195926/detail/91c674ac2b89dde9A373/91c674ac2b89dde9A373.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
+                        alt="商品详情" data-loaded="1">
+
+
+
+                    <img class="detail_img"
+                        src="https://pic.midea.cn/ImageStore/195926/detail/1d3703a0d2a55a50A958/1d3703a0d2a55a50A958.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
+                        data-src="https://pic.midea.cn/ImageStore/195926/detail/1d3703a0d2a55a50A958/1d3703a0d2a55a50A958.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
+                        alt="商品详情" data-loaded="1">
+
+
+
+                    <img class="detail_img"
+                        src="https://pic.midea.cn/ImageStore/195926/detail/2fdac3bee3c098fdA695/2fdac3bee3c098fdA695.gif?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
+                        data-src="https://pic.midea.cn/ImageStore/195926/detail/2fdac3bee3c098fdA695/2fdac3bee3c098fdA695.gif?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
+                        alt="商品详情" data-loaded="1">
+
+
+
+                    <img class="detail_img"
+                        src="https://pic.midea.cn/ImageStore/195926/detail/0eb9c4d2b6fe677eA32637/0eb9c4d2b6fe677eA32637.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
+                        data-src="https://pic.midea.cn/ImageStore/195926/detail/0eb9c4d2b6fe677eA32637/0eb9c4d2b6fe677eA32637.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
+                        alt="商品详情" data-loaded="1">
+
+
+
+                    <img class="detail_img"
+                        src="https://pic.midea.cn/ImageStore/195926/detail/c1b009b8935e200aA957/c1b009b8935e200aA957.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
+                        data-src="https://pic.midea.cn/ImageStore/195926/detail/c1b009b8935e200aA957/c1b009b8935e200aA957.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
+                        alt="商品详情" data-loaded="1">
+
+
+
+                    <img class="detail_img"
+                        src="https://pic.midea.cn/ImageStore/195926/detail/c182b9829770c67bA32618/c182b9829770c67bA32618.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
+                        data-src="https://pic.midea.cn/ImageStore/195926/detail/c182b9829770c67bA32618/c182b9829770c67bA32618.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
+                        alt="商品详情" data-loaded="1">
+
+
+
+                    <img class="detail_img"
+                        src="https://pic.midea.cn/ImageStore/195926/detail/525eba2668166adfA429/525eba2668166adfA429.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
+                        data-src="https://pic.midea.cn/ImageStore/195926/detail/525eba2668166adfA429/525eba2668166adfA429.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
+                        alt="商品详情" data-loaded="1">
+
+
+
+                    <img class="detail_img"
+                        src="https://pic.midea.cn/ImageStore/195926/detail/4343683c4f608a5cA444/4343683c4f608a5cA444.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
+                        data-src="https://pic.midea.cn/ImageStore/195926/detail/4343683c4f608a5cA444/4343683c4f608a5cA444.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
+                        alt="商品详情" data-loaded="1">
+
+
+
+                    <img class="detail_img"
+                        src="https://pic.midea.cn/ImageStore/195926/detail/977594e06c4d2e76A1016/977594e06c4d2e76A1016.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
+                        data-src="https://pic.midea.cn/ImageStore/195926/detail/977594e06c4d2e76A1016/977594e06c4d2e76A1016.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
+                        alt="商品详情" data-loaded="1">
+
+
+
+                    <img class="detail_img"
+                        src="https://pic.midea.cn/ImageStore/195926/detail/2b35d77212b8fecaA32302/2b35d77212b8fecaA32302.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
+                        data-src="https://pic.midea.cn/ImageStore/195926/detail/2b35d77212b8fecaA32302/2b35d77212b8fecaA32302.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
+                        alt="商品详情" data-loaded="1">
+
+
+
+                    <img class="detail_img"
+                        src="https://pic.midea.cn/ImageStore/195926/detail/6acd6f69a7e2360aA32301/6acd6f69a7e2360aA32301.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
+                        data-src="https://pic.midea.cn/ImageStore/195926/detail/6acd6f69a7e2360aA32301/6acd6f69a7e2360aA32301.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
+                        alt="商品详情" data-loaded="1">
+
+
+
+                    <img class="detail_img"
+                        src="https://pic.midea.cn/ImageStore/195926/detail/e355f8cc0d2f1d42A32255/e355f8cc0d2f1d42A32255.png?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
+                        data-src="https://pic.midea.cn/ImageStore/195926/detail/e355f8cc0d2f1d42A32255/e355f8cc0d2f1d42A32255.png?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
+                        alt="商品详情" data-loaded="1">
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+            <div class="marking_price_wrap">
+                <p class="marking_price__title">划线价格：</p>
+                <p class="marking_price__content">指商品专柜价、吊牌价、正品零售价、厂商指导价或该商品的曾经展示过的销售价等，并非原价，仅供參考。</p>
+                <p class="marking_price__title">未划线价格：</p>
+                <p class="marking_price__content">指商品的实时标价，不因表述的差异改变性质。具体成交价格根据商品参加活动，或会员使用优惠券、积分等发生变化，最终以订单结算页价格为准。</p>
+                <p class="marking_price__content">
+                    商家详情页（含主图）以图片成文字形式标注的一口价、促销价、优惠价等价格可能是在使用优惠券、满减或特定优惠活动和时段等情形下的价格.具体请以结算页面的标价、优惠条件或活动规则为准。</p>
+                <p class="marking_price__content">此说明仅当出现价格比较时有效，如有疑问，您可在购买前联系客服进行咨询。</p>
             </div>
         </div>
 
-        <!-- 开通会员 -->
-        <div class="open_member">
-            <div class="open_mem_entrence">
-                <p>开通PRO会员，预计可省275元<i class="iconfont icon-jinggao"></i></p>
-                <a href="javascript:;">立即开卡<i class="iconfont icon-icon_right_arrows"></i></a>
-            </div>
-        </div>
-        <!-- 活动类型 -->
-        <div class="activity_type">
-            <span>PRO精选</span>
-            <span>限时24小时抢购</span>
-            <span>满赠</span>
-        </div>
-
-        <!-- 商品属性 -->
-        <div class="goods_info">
-            <div class="title_wrap">
-                <div class="title_con">
-                    <span>自营</span>
-                    【送赠】美的空调 新能效智弧 智能变频冷暖大1.5匹壁挂式智控温 KFR-35GW/N8MJA3
-                    <div class="like_btn">
-                        <i class="iconfont icon-shoucang2"></i>
-                        <span>关注</span>
-                    </div>
-                </div>
-                <a href="miao_promote02">
-                    <div class="goods_world">
-                        买即送小美智能音箱，赠品数量有限，送完即止
-                        <span>详情<i class="iconfont icon-icon_right_arrows"></i></span>
-                    </div>
+        <!-- 商品购买功能 -->
+        <div class="btn_wrap">
+            <div class="func_btn">
+                <a href="javascript:;">
+                    <i class="iconfont icon-shouye2"></i>
+                    <span>首页</span>
                 </a>
             </div>
-            <div class="goods_property">
-                <div class="property_list">
-                    <div class="property_item">
-                        <img src="https://pic.midea.cn/CategoryIcon/30/icon_30_128.png" alt="">
-                        <h4>冷暖</h4>
-                        <p>冷暖类型</p>
-                    </div>
-                    <div class="property_item">
-                        <img src="https://pic.midea.cn/CategoryIcon/30/icon_30_129.png" alt="">
-                        <h4>变频</h4>
-                        <p>空调技术</p>
-                    </div>
-                    <div class="property_item">
-                        <img src="https://pic.midea.cn/CategoryIcon/30/icon_30_130.png" alt="">
-                        <h4>三级</h4>
-                        <p>能效等级</p>
-                    </div>
-                    <div class="property_item">
-                        <img src="https://pic.midea.cn/CategoryIcon/30/icon_30_139.png" alt="">
-                        <h4>1.5匹</h4>
-                        <p>空调匹数</p>
-                    </div>
-                    <div class="property_item">
-                        <img src="https://pic.midea.cn/CategoryIcon/30/icon_30_140.png" alt="">
-                        <h4>15~23</h4s>
-                            <p>制冷适用面积（m2）</p>
-                    </div>
-                </div>
+            <div class="func_btn">
+                <a href="javascript:;">
+                    <i class="iconfont icon-kefu"></i>
+                    <span>客服</span>
+                </a>
             </div>
-
-        </div>
-        <!-- 商品积分 -->
-        <div class="integral">
-            <div class="get_integral">
-                <i class="iconfont icon-jifen"></i>
-                <p>预计最高得<span>209积分</span></p>
+            <div class="func_btn">
+                <a href="javascript:;">
+                    <i class="iconfont icon-gouwuche"></i>
+                    <span>购物车</span>
+                </a>
             </div>
-            <div class="look_integral">
-                <span>查看</span>
-                <i class="iconfont icon-icon_right_arrows public_icon"></i>
+            <div class="btn_group">
+                <a href="javascript:;">加入购物车</a>
             </div>
         </div>
-
-        <!-- 商品优惠汇总 -->
-        <div class="activity_total">
-            <div class="act_total_con">
-                <div class="act_total_type">
-                    <h3 class="total_tag">活动</h3>
-                    <span class="total_tag_tit">领券</span>
-                    <span class="total_tag_small"> 满1000减100</span>
-                    <span class="total_tag_big"> 满5000减500</span>
-                </div>
-                <i class="iconfont icon-icon_right_arrows public_icon"></i>
-            </div>
-            <div class="discount_con">
-                <div class="discount_price con_flex">
-                    <span>限时折扣</span>
-                    <p>限时24小时抢购</p>
-                </div>
-                <div class="discount_suit con_flex">
-                    <span>场景套装</span>
-                    <p>满2个品类满3000.00元打9.50折</p>
-                </div>
-                <div class="discount_price con_flex">
-                    <span>满赠</span>
-                    <p>下单送小美智能音箱1个，赠品数量有限送完即止</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- 会员权限 -->
-        <div class="member_rights">
-            <div class="rights_section public_padding">
-                <div class="section_con">
-                    <i class="iconfont icon-quanxian"></i>
-                    <span>会员放心购</span>
-                </div>
-                <div class="section_more">
-                    <span style="font-weight:normal;font-size:0.24rem">查看更多</span>
-                    <i class="iconfont icon-icon_right_arrows public_icon"></i>
-                </div>
-            </div>
-
-            <div class="rights_service public_padding">
-                <div class="service_item">
-                    <i class="iconfont icon-xuanzhong1"></i>
-                    <span>全国联保</span>
-                </div>
-                <div class="service_item">
-                    <i class="iconfont icon-xuanzhong1"></i>
-                    <span>全程包邮</span>
-                </div>
-                <div class="service_item">
-                    <i class="iconfont icon-xuanzhong1"></i>
-                    <span>7天无理由退换货</span>
-                </div>
-                <div class="service_item">
-                    <i class="iconfont icon-xuanzhong1"></i>
-                    <span>延保服务</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- 购买选项 -->
-        <div class="buy_info">
-            <div class="buy_standards">
-                <div>
-                    <h3 class="opt_status">已选</h3>
-                    <p>
-                        <span class="buy_color">极地白</span>/
-                        <span class="buy_specs">大三匹</span>/
-                        <span class="buy_num">1件</span>
-                    </p>
-                </div>
-                <i class="iconfont icon-icon_right_arrows public_icon"></i>
-                <div class="line"></div>
-            </div>
-            <div class="buy_address">
-                <div>
-                    <h3 class="opt_address">送至</h3>
-                    <p>
-                        广东省广州市天河区
-                    </p>
-                </div>
-                <span>
-                    <a href="javascript:;">无货</a>
-                    <i class="iconfont icon-icon_right_arrows public_icon"></i>
-                </span>
-
-            </div>
-        </div>
-
-        <!-- 会员评价 -->
-        <div class="member_assess">
-            <div class="assess_tit">
-                <div class="total_num">
-                    <p>会员评价</p>
-                    <span>(84)</span>
-                </div>
-                <div class="assess_all">
-                    <a href="javascript:;">查看全部</a>
-                    <i class="iconfont icon-icon_right_arrows public_icon"></i>
-
-                </div>
-            </div>
-            <div class="assess_tag">
-                <span class="assess_good">好&nbsp;<i>(27)</i></span>
-                <span class="assess_well">很好&nbsp;<i>(16)</i></span>
-            </div>
-            <div class="assess_list">
-                <div class="assess_user">
-                    <div class="user_msg">
-                        <img class="user_photo"
-                            src="https://filecmms.midea.com/ccrm-prod/userHeadImg/20200627/2b4b87f0-3b8e-48b4-ad1f-8c909fa72133.jpeg"
-                            alt="">
-                        <p class="user_name">何***东</p>
-                        <i class="iconfont icon-huangjinhuiyuan2"></i>
-                    </div>
-                    <p class="report_time">2020-07-19</p>
-                </div>
-                <div class="assess_con">产品好，服务好！</div>
-                <div class="assess_pic_list">
-                    <img src="//pic.mdcdn.cn/h5/pic/202007/af0ed1bb70c3fbc486bb50115c096c18.jpg" alt="">
-                </div>
-            </div>
-        </div>
-
-
-        <!-- 产品推荐 -->
-        <div class="recommendTab">
-            <div class="recommend_tit">为你推荐</div>
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide product">
-                        <a href="javascript:;">
-                            <img src="https://img.mdcdn.cn/ImageStore/148383/pic/2cc7bcadc6ba2d1dA14423/2cc7bcadc6ba2d1dA14423_280*280.jpg"
-                                alt="">
-                            <div class="info">
-                                中央空调一拖一 变频风管机 冷暖 2匹 WiFi智控 GRD51T2W/BP2N1-TR
-                            </div>
-                            <div class="price">
-                                ¥5699
-                                <i></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide product">
-                        <a href="javascript:;">
-                            <img src="https://img.mdcdn.cn/ImageStore/148383/pic/2cc7bcadc6ba2d1dA14423/2cc7bcadc6ba2d1dA14423_280*280.jpg"
-                                alt="">
-                            <div class="info">
-                                中央空调一拖一 变频风管机 冷暖 2匹 WiFi智控 GRD51T2W/BP2N1-TR
-                            </div>
-                            <div class="price">
-                                ¥5699
-                                <i></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide product">
-                        <a href="javascript:;">
-                            <img src="https://img.mdcdn.cn/ImageStore/148383/pic/2cc7bcadc6ba2d1dA14423/2cc7bcadc6ba2d1dA14423_280*280.jpg"
-                                alt="">
-                            <div class="info">
-                                中央空调一拖一 变频风管机 冷暖 2匹 WiFi智控 GRD51T2W/BP2N1-TR
-                            </div>
-                            <div class="price">
-                                ¥5699
-                                <i></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide product">
-                        <a href="javascript:;">
-                            <img src="https://img.mdcdn.cn/ImageStore/151575/pic/7db7fd1fd031743cA8784/7db7fd1fd031743cA8784_280*280.jpg"
-                                alt="">
-                            <div class="info">
-                                中央空调一拖一 变频风管机 冷暖 2匹 WiFi智控 GRD51T2W/BP2N1-TR
-                            </div>
-                            <div class="price">
-                                ¥5699
-                                <i></i>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <script>
-           new Swiper('.swiper-container', {
-                slidesPerView:2
-             
-                // autoplay: true, //可选选项，自动滑动
-            })
-        </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- 以下为测试代码 -->
-        <div id="itany">
-            <button @click="send">发送AJAX请求</button>
-
-            <!-- <button @click="sendGet">GET方式发送AJAX请求</button> -->
-
-        </div>
-        <!-- <script src="/javascripts/vue.js"></script>
-        <script>
-            window.onload = function () {
-                new Vue({
-                    el: '#itany',
-                    data: {
-                        getSqlData: ''
-                    },
-                    methods: {
-                        send() {
-                            axios({
-                                method: 'get',
-                                url: 'http://localhost:3000/users/message'
-                            }).then(function (resp) {
-
-                                this.getSqlData = resp.data
-                                console.log(this.getSqlData);
-                            }).catch(resp => {
-                                console.log('请求失败：' + resp.status + ',' + resp.statusText);
-                            });
-                        },
-
-                    }
-                });
-            }
-        </script>
- -->
-
-
-
-
-
-
 
     </div>
+
+
+
+
+
+
+
+    <!-- 以下为测试代码 -->
+
+    <script src="/javascripts/vue.js"></script>
+    <script>
+        new Vue({
+            el: '#itany',
+            data: {
+                getSqlData:[],
+                banner:[]
+            },
+            filters:{
+
+            },
+            methods: {
+                send() {
+                 
+                    $.ajax({
+                        method:'get',
+                        data:{
+                            id:1
+                        },
+                        url:'http://172.16.5.120:3000/details',
+                        success:res=>{
+                            this.banner=eval("("+res.data[0].banner_url+")")
+                        }
+                    })
+                },
+
+            },
+            created() {
+                this.send()
+            }
+
+
+        })
+    </script>
 
     <script src="/javascripts/goods_detail.js"></script>
 
