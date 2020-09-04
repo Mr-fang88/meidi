@@ -18,10 +18,7 @@
 </head>
 
 <body>
-
-
-
-    <div id="itany">
+    <div id="itany" v-cloak>
         <!-- 头部信息 -->
         <div class="header clearfix">
             <div class="header_left">
@@ -55,26 +52,6 @@
                             <img :src="item"
                                 alt="">
                         </div>
-                        <!-- <div class="swiper-slide">
-                            <img src="https://pic.midea.cn/ImageStore/195926/pic/93288bbff0424533A13932/93288bbff0424533A13932_640*640_50.jpg"
-                                alt="">
-
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="https://pic.midea.cn/ImageStore/195926/pic/83eceb93a42994fbA25863/83eceb93a42994fbA25863_640*640_50.jpg"
-                                alt="">
-
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="https://pic.midea.cn/ImageStore/195926/pic/baa1ba7fb485c76fA13226/baa1ba7fb485c76fA13226_640*640_50.jpg"
-                                alt="">
-
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="https://pic.midea.cn/ImageStore/195926/pic/50ecae011e57d192A13216/50ecae011e57d192A13216_640*640_50.jpg"
-                                alt="">
-                        </div> -->
-                   
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
@@ -87,11 +64,11 @@
                     <div class="act_time">限时24小时抢购</div>
                     <div class="act_price">
                         <span>￥</span>
-                        <i>2099</i>
-                        <del>￥2499</del>
+                        <i>{{goodsPrice[0]}}</i>
+                        <del>￥{{goodsPrice[1]}}</del>
                         <div>
                             <i>PRO</i>
-                            <span>￥1994</span>
+                            <span>￥{{goodsPrice[2]}}</span>
                         </div>
                     </div>
                 </div>
@@ -115,8 +92,8 @@
             <!-- 活动类型 -->
             <div class="activity_type">
                 <span>PRO精选</span>
-                <span>限时24小时抢购</span>
-                <span>满赠</span>
+                <span v-for="item in activity">{{item}}</span>
+                
             </div>
 
 
@@ -125,7 +102,7 @@
                 <div class="title_wrap">
                     <div class="title_con">
                         <span>自营</span>
-                        【送赠】美的空调 新能效智弧 智能变频冷暖大1.5匹壁挂式智控温 KFR-35GW/N8MJA3
+                        {{title}}
                         <div class="like_btn">
                             <i class="iconfont icon-shoucang2"></i>
                             <span>关注</span>
@@ -140,31 +117,12 @@
                 </div>
                 <div class="goods_property">
                     <div class="property_list">
-                        <div class="property_item">
-                            <img src="https://pic.midea.cn/CategoryIcon/30/icon_30_128.png" alt="">
-                            <h4>冷暖</h4>
-                            <p>冷暖类型</p>
+                        <div class="property_item" v-for="(item,index) in parameter_icon">
+                            <img :src="item" alt="">
+                            <h4>{{parameter_text[index]}}</h4>
+                            <p>{{parameter_de[index]}}</p>
                         </div>
-                        <div class="property_item">
-                            <img src="https://pic.midea.cn/CategoryIcon/30/icon_30_129.png" alt="">
-                            <h4>变频</h4>
-                            <p>空调技术</p>
-                        </div>
-                        <div class="property_item">
-                            <img src="https://pic.midea.cn/CategoryIcon/30/icon_30_130.png" alt="">
-                            <h4>三级</h4>
-                            <p>能效等级</p>
-                        </div>
-                        <div class="property_item">
-                            <img src="https://pic.midea.cn/CategoryIcon/30/icon_30_139.png" alt="">
-                            <h4>1.5匹</h4>
-                            <p>空调匹数</p>
-                        </div>
-                        <div class="property_item">
-                            <img src="https://pic.midea.cn/CategoryIcon/30/icon_30_140.png" alt="">
-                            <h4>15~23</h4s>
-                                <p>制冷适用面积（m2）</p>
-                        </div>
+                      
                     </div>
                 </div>
 
@@ -491,140 +449,11 @@
                 </ul>
                 <div class="detail_img_wrap">
                     <img class="detail_img"
-                        src="https://pic.midea.cn/ImageStore/195926/detail/5e5e981429862861A32630/5e5e981429862861A32630.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
+                        :src="item"
                         data-src="https://pic.midea.cn/ImageStore/195926/detail/5e5e981429862861A32630/5e5e981429862861A32630.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
-                        alt="商品详情" data-loaded="1">
-                    <img class="detail_img"
-                        src="https://pic.midea.cn/ImageStore/195926/detail/7cd9c1a5661e0cafA32636/7cd9c1a5661e0cafA32636.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
-                        data-src="https://pic.midea.cn/ImageStore/195926/detail/7cd9c1a5661e0cafA32636/7cd9c1a5661e0cafA32636.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
-                        alt="商品详情" data-loaded="1">
-                    <img class="detail_img"
-                        src="https://pic.midea.cn/ImageStore/195926/detail/0053f0012b707fa8A1238/0053f0012b707fa8A1238.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
-                        data-src="https://pic.midea.cn/ImageStore/195926/detail/0053f0012b707fa8A1238/0053f0012b707fa8A1238.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
-                        alt="商品详情" data-loaded="1">
-
-
-
-                    <img class="detail_img"
-                        src="https://pic.midea.cn/ImageStore/195926/detail/bf03402ca8f3e9e6A1004/bf03402ca8f3e9e6A1004.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
-                        data-src="https://pic.midea.cn/ImageStore/195926/detail/bf03402ca8f3e9e6A1004/bf03402ca8f3e9e6A1004.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
-                        alt="商品详情" data-loaded="1">
-
-
-
-                    <img class="detail_img"
-                        src="https://pic.midea.cn/ImageStore/195926/detail/5333ed7e082187bfA807/5333ed7e082187bfA807.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
-                        data-src="https://pic.midea.cn/ImageStore/195926/detail/5333ed7e082187bfA807/5333ed7e082187bfA807.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
-                        alt="商品详情" data-loaded="1">
-
-
-
-                    <img class="detail_img"
-                        src="https://pic.midea.cn/ImageStore/195926/detail/91c674ac2b89dde9A373/91c674ac2b89dde9A373.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
-                        data-src="https://pic.midea.cn/ImageStore/195926/detail/91c674ac2b89dde9A373/91c674ac2b89dde9A373.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
-                        alt="商品详情" data-loaded="1">
-
-
-
-                    <img class="detail_img"
-                        src="https://pic.midea.cn/ImageStore/195926/detail/1d3703a0d2a55a50A958/1d3703a0d2a55a50A958.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
-                        data-src="https://pic.midea.cn/ImageStore/195926/detail/1d3703a0d2a55a50A958/1d3703a0d2a55a50A958.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
-                        alt="商品详情" data-loaded="1">
-
-
-
-                    <img class="detail_img"
-                        src="https://pic.midea.cn/ImageStore/195926/detail/2fdac3bee3c098fdA695/2fdac3bee3c098fdA695.gif?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
-                        data-src="https://pic.midea.cn/ImageStore/195926/detail/2fdac3bee3c098fdA695/2fdac3bee3c098fdA695.gif?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
-                        alt="商品详情" data-loaded="1">
-
-
-
-                    <img class="detail_img"
-                        src="https://pic.midea.cn/ImageStore/195926/detail/0eb9c4d2b6fe677eA32637/0eb9c4d2b6fe677eA32637.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
-                        data-src="https://pic.midea.cn/ImageStore/195926/detail/0eb9c4d2b6fe677eA32637/0eb9c4d2b6fe677eA32637.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
-                        alt="商品详情" data-loaded="1">
-
-
-
-                    <img class="detail_img"
-                        src="https://pic.midea.cn/ImageStore/195926/detail/c1b009b8935e200aA957/c1b009b8935e200aA957.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
-                        data-src="https://pic.midea.cn/ImageStore/195926/detail/c1b009b8935e200aA957/c1b009b8935e200aA957.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
-                        alt="商品详情" data-loaded="1">
-
-
-
-                    <img class="detail_img"
-                        src="https://pic.midea.cn/ImageStore/195926/detail/c182b9829770c67bA32618/c182b9829770c67bA32618.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
-                        data-src="https://pic.midea.cn/ImageStore/195926/detail/c182b9829770c67bA32618/c182b9829770c67bA32618.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
-                        alt="商品详情" data-loaded="1">
-
-
-
-                    <img class="detail_img"
-                        src="https://pic.midea.cn/ImageStore/195926/detail/525eba2668166adfA429/525eba2668166adfA429.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
-                        data-src="https://pic.midea.cn/ImageStore/195926/detail/525eba2668166adfA429/525eba2668166adfA429.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
-                        alt="商品详情" data-loaded="1">
-
-
-
-                    <img class="detail_img"
-                        src="https://pic.midea.cn/ImageStore/195926/detail/4343683c4f608a5cA444/4343683c4f608a5cA444.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
-                        data-src="https://pic.midea.cn/ImageStore/195926/detail/4343683c4f608a5cA444/4343683c4f608a5cA444.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
-                        alt="商品详情" data-loaded="1">
-
-
-
-                    <img class="detail_img"
-                        src="https://pic.midea.cn/ImageStore/195926/detail/977594e06c4d2e76A1016/977594e06c4d2e76A1016.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
-                        data-src="https://pic.midea.cn/ImageStore/195926/detail/977594e06c4d2e76A1016/977594e06c4d2e76A1016.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
-                        alt="商品详情" data-loaded="1">
-
-
-
-                    <img class="detail_img"
-                        src="https://pic.midea.cn/ImageStore/195926/detail/2b35d77212b8fecaA32302/2b35d77212b8fecaA32302.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
-                        data-src="https://pic.midea.cn/ImageStore/195926/detail/2b35d77212b8fecaA32302/2b35d77212b8fecaA32302.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
-                        alt="商品详情" data-loaded="1">
-
-
-
-                    <img class="detail_img"
-                        src="https://pic.midea.cn/ImageStore/195926/detail/6acd6f69a7e2360aA32301/6acd6f69a7e2360aA32301.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
-                        data-src="https://pic.midea.cn/ImageStore/195926/detail/6acd6f69a7e2360aA32301/6acd6f69a7e2360aA32301.jpg?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
-                        alt="商品详情" data-loaded="1">
-
-
-
-                    <img class="detail_img"
-                        src="https://pic.midea.cn/ImageStore/195926/detail/e355f8cc0d2f1d42A32255/e355f8cc0d2f1d42A32255.png?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
-                        data-src="https://pic.midea.cn/ImageStore/195926/detail/e355f8cc0d2f1d42A32255/e355f8cc0d2f1d42A32255.png?x-oss-process=image/resize,limit_0,w_790/quality,Q_50"
-                        alt="商品详情" data-loaded="1">
-
-
-
-
-
-
-
-
+                        alt="商品详情" data-loaded="1"
+                        v-for="item in details_url">
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             </div>
 
             <div class="marking_price_wrap">
@@ -660,26 +489,26 @@
             </div>
             <div class="btn_group">
                 <a href="javascript:;">加入购物车</a>
+                <a href="javascript:;">立即购买</a>
             </div>
         </div>
 
     </div>
-
-
-
-
-
-
-
-    <!-- 以下为测试代码 -->
-
     <script src="/javascripts/vue.js"></script>
     <script>
         new Vue({
             el: '#itany',
             data: {
                 getSqlData:[],
-                banner:[]
+                banner:[],
+                goodsPrice:[],
+                activity:[],
+                title:'',
+                parameter_icon:[],
+                parameter_text:[],
+                parameter_de:[],
+                details_url:[]
+
             },
             filters:{
 
@@ -692,10 +521,21 @@
                         data:{
                             id:1
                         },
-                        url:'http://172.16.5.120:3000/details',
+                        url:'http://172.16.5.131:3000/details',
                         success:res=>{
-                            this.banner=eval("("+res.data[0].banner_url+")")
-                        }
+                            console.log(res)
+                            this.banner = eval("("+res.data[0].banner_url+")")
+                            this.goodsPrice = eval("("+res.data[0].price+")")
+                            this.activity = eval("("+res.data[0].activity+")")
+                            this.title = res.data[0].name
+                            this.parameter_icon = eval("("+res.data[0].parameter_icon+")")
+                            this.parameter_text = eval("("+res.data[0].parameter_text+")")
+                            this.parameter_de = eval("("+res.data[0].parameter_de+")")
+                            this.details_url = eval("("+res.data[0].details_url+")")
+                            console.log(this.details_url)
+
+
+                        },
                     })
                 },
 

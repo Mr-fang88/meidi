@@ -1178,12 +1178,13 @@ body {
 }
 
 .btn_group {
-    width: 4.3rem;
+    display: flex;
+    /* width: 4.3rem; */
 }
 
 .btn_group a {
     display: block;
-    width: 4.3rem;
+    width: 2.1rem;
     height: 0.8rem;
     background-color: #0092d8;
     border-radius: 0.4rem;
@@ -1193,4 +1194,7 @@ body {
     font-size: 0.28rem;
     font-weight: 700;
     margin-left: 0.15rem;
+}
+.btn_group a:nth-child(2){
+    background-color: #f60;
 }

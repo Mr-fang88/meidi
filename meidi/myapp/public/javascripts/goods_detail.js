@@ -7,7 +7,6 @@ $(function () {
 
     //商品轮播01
     let swiper1 = new Swiper('.banner_wraper', {
-        autoplay: true,//可选选项，自动滑动
         pagination: {
             el: '.swiper-pagination',
             type: 'fraction',
@@ -16,8 +15,7 @@ $(function () {
 
     // 获取总标题
     $(".header_md li").on("click", function () {
-        $(this).addClass("header_item").siblings(".header_item").removeClass("header_item")
-        $(this).addClass("header_md_active").siblings(".header_md_active").removeClass("header_md_active")
+        $(this).addClass("header_item header_md_active").siblings().removeClass("header_item header_md_active")
         let Otop = $(".backTop").eq($(this).index()).offset().top - 40;
         $(window).scrollTop(Otop)
     })
@@ -123,6 +121,16 @@ $(function () {
         $(".seconds").text(futureSecond);
     }, 1000)
 
+  
+    setInterval(function () {
+      
+        var date = new Date()
+        console.log(date)
+
+        // $(".hours").text(futureHours);
+        // $(".minutes").text(futureMinute);
+        // $(".seconds").text(futureSecond);
+    }, 1000)
 
 
 
